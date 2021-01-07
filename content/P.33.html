@@ -1,0 +1,204 @@
+<!DOCTYPE html><html>
+        <head>
+        <title>CMSiMDE</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900" rel="stylesheet">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/icomoon/style.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/magnific-popup.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/jquery-ui.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap-datepicker.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/flaticon/font/flaticon.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/aos.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/style.css">
+        <link rel="shortcut icon" href="./../cmsimde/static/favicons.png">
+        
+        <style type='text/css'>
+            .site-section {
+            background-color: #FFFF;
+            padding: 40px 40px;
+            }
+            body > div > div.dropdown.open {
+                display: block;
+            }
+        </style>
+    
+        <!-- <script src="./../cmsimde/static/jquery.js"></script> -->
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+        <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/normalize.min.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch_set.js"></script>
+        <script src="tipuesearch_content.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/tipuesearch.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch.js"></script>
+        <script>
+            /* original tipuesearch
+            $(document).ready(function() {
+                 $('#tipue_search_input').tipuesearch();
+            });
+            */
+            // customed doSearch
+            function doSearch() {
+                $('#tipue_search_input').tipuesearch({
+                    newWindow: true, 
+                    minimumLength: 2,
+                    wholeWords: false, // for search 中文
+                });
+            }
+            $(document).ready(doSearch);
+        </script>
+        
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shCore.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushBash.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDiff.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJScript.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJava.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPython.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushSql.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushHaxe.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushXml.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPhp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushLua.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCpp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCss.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCSharp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDart.js"></script>
+<link type="text/css" rel="stylesheet" href="./../cmsimde/static/syntaxhighlighter/css/shCoreDefault.css"/>
+<script type="text/javascript">SyntaxHighlighter.all();</script>
+<!-- 暫時不用
+<script src="./../cmsimde/static/fengari-web.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/Cango-13v08-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/CangoAxes-4v01-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/gearUtils-05.js"></script>
+-->
+<!-- for Brython 暫時不用
+<script src="https://scrum-3.github.io/web/brython/brython.js"></script>
+<script src="https://scrum-3.github.io/web/brython/brython_stdlib.js"></script>
+-->
+<style>
+img.add_border {
+    border: 3px solid blue;
+}
+</style>
+
+</head>
+<body>
+<div class='container'><nav>
+        
+    <div class="site-wrap">
+
+    <div class="site-mobile-menu">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+    
+            <header class="site-navbar py-4 bg-white" role="banner">
+              <div class="container-fluid">
+                <div class="row align-items-center">
+                <h1>40923113 cp2020</h1>
+                <div class="pl-4">
+                    <form>
+                    <input type="text" placeholder="Search" name="q" id="tipue_search_input" pattern=".{2,}" title="At least 2 characters" required>
+                    </form>
+                </div>
+                  <!-- <div class="col-11 col-xl-2">
+                    <h1 class="mb-0 site-logo"><a href="index.html" class="text-black h2 mb-0">40923113 cp2020</a></h1> 
+                  </div>
+                  -->
+                  <div class="col-12 col-md-10 d-none d-xl-block">
+                    <nav class="site-navigation position-relative text-right" role="navigation">
+    <ul class='site-menu js-clone-nav mr-auto d-none d-lg-block'>
+                        <li class="active has-children"><a href="index.html">Home</a>
+                        <ul class="dropdown">
+                            <li><a href="sitemap.html">Site Map</a></li>
+                            <li><a href="./../reveal/index.html">reveal</a></li>
+                            <li><a href="./../blog/index.html">blog</a></li>
+                        </ul>
+                      </li>
+                     <li><a href='About.html'>About</a><li><a href='Develop.html'>Develop</a><li class='has-children'><a href='Hw1.html'>Hw1</a><ul class='dropdown'><li><a href='P.19.html'>P.19</a><li><a href='P.20.html'>P.20</a><li><a href='P.21.html'>P.21</a><li><a href='P.22.html'>P.22</a><li><a href='P.23.html'>P.23</a><li><a href='P.24.html'>P.24</a><li><a href='P.25.html'>P.25</a><li><a href='P.26.html'>P.26</a><li><a href='P.27.html'>P.27</a><li><a href='P.29.html'>P.29</a><li><a href='P.30.html'>P.30</a><li><a href='P.31.html'>P.31</a><li><a href='P.32.html'>P.32</a><li><a href='P.33.html'>P.33</a><li><a href='P.34.html'>P.34</a><li><a href='P.35.html'>P.35</a><li><a href='P.36.html'>P.36</a></li></ul><li class='has-children'><a href='Hw3.html'>Hw3</a><ul class='dropdown'><li><a href='1..html'>1.</a><li><a href='2..html'>2.</a><li><a href='3..html'>3.</a><li><a href='4..html'>4.</a></li>
+                      </ul>
+                </nav>
+              </div>
+              <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
+              </div>
+
+            </div>
+          </div>
+          
+        </header>
+    <div id="tipue_search_content">P.32 << <a href='P.32.html'>Previous</a> <a href='P.34.html'>Next</a> >> P.34<br /><h1>P.33</h1>
+<p id="N1068A" lang="">An employee providing customer service must learn to remain courteous in all situations, regardless of how the customer behaves.</p>
+<p id="N1068D" lang="">The ability to defuse angry customers and handle difficult situations is a key element in providing effective customer service. An important strategy is to let the customer know what you are doing to solve the problem. Also, the ability to communicate on the same level as the customer and understand the audience is essential. Communicating on the same level as the customer means making sure to ask clarifying questions, repeating the information to ensure that you completely understand the issue and making sure the customer knows that you understand and will deal with the problem. It does not mean matching the customer’s behavior, particularly if the customer is angry or frustrated.</p>
+<div class="imagewrap"><span class="image"><img alt="Photograph of woman dressed professionally and sitting at a desk with a    computer. She is wearing a headset with microphone." class="popimg" id="_i_0" onclick="loadImageFromPage(this);" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH03/webcontent/PCH03/image4.jpeg" title="Photograph of woman dressed professionally and sitting at a desk with a    computer. She is wearing a headset with microphone."/></span><span class="caption" lang="">Customer Service. Photo used under CC-BY license from<span> </span><a href="https://www.flickr.com/photos/seattlemunicipalarchives/3182935316" id="_i_1" lang="" target="_blank">Seattle</a><a href="https://www.flickr.com/photos/seattlemunicipalarchives/3182935316" id="_i_2" lang="" target="_blank">Municipal Archives</a>.</span></div>
+<p id="N106A0" lang="">What are courteous behaviors?</p>
+<p id="N106A3" lang="">It is extremely important to maintain good eye contact, a moderate tone of voice, and positive body language during interactions with customers. Courteous behaviors could include a warm or sympathetic smile; an offer to take the customer to a more private location for further discussions; an offer of a tissue in the event of tears; an offer to call a family member if the customer appears extremely distressed, or an offer to give the customer a bit of privacy to pull himself together a bit more before resuming discussion about the problem.</p>
+<p id="N106A6" lang="">Sometimes companies lose business because their employees do not demonstrate courteous behavior. They can quickly lose valued customers if company employees are rude or unhelpful. Employing proper phone etiquette is critically important. It is important to mute the telephone whenever you have to discuss a situation with a coworker. When chatting with a customer, use small talk only when appropriate and only about harmless topics such as the weather. If you must place someone on hold, check with the person frequently.</p>
+<ul lang="">
+<li lang="">"This will take a bit longer than I thought, would you like to continue to hold or may I call you back?"</li>
+<li lang="">"Is there a good number where I can reach you when I have the answer?"</li>
+</ul>
+<p id="N106B2" lang="">Expectation management is crucial: always set expectations and meet those expectations. Do<span> </span><em class="bold" lang="">not<span> </span></em>promise something you cannot deliver. As you work through the problem, maintain a positive attitude and tone of voice; you will get more referrals and business if you remain likeable. Remember: the customer isn’t the problem, the customer is the one<span> </span><em class="bold" lang="">with<span> </span></em>the problem. So, don’t argue with the customer; just solve the problem. Also, don’t minimize the customer’s issues: to the customer, it is a horrible, tragic, big problem that they need you to fix. Never blame the customer for the problem or be judgmental toward the customer. Saying “If you didn’t go to that website, you wouldn’t have this problem” isn’t helpful, it is just insulting. Also, your mobile phone can wait while you are interacting with a customer. Give the customer your full attention and avoid distractions.</p>
+<p>提供客戶服務的員工必須學會在所有情況下都保持禮貌，無論客戶的行為如何。</p>
+<p>化解生氣的客戶並處理困難情況的能力是提供有效客戶服務的關鍵要素。一個重要的策略是讓客戶知道您正在採取什麼措施來解決問題。此外，與客戶在同一水平上進行交流並了解受眾的能力也至關重要。與客戶在同一級別上進行通信意味著確保提出明確的問題，重複信息以確保您完全理解問題，並確保客戶知道您已理解並會解決問題。這並不意味著匹配客戶的行為，尤其是在客戶生氣或沮喪的情況下。</p>
+<p>專業地打扮和坐在有計算機的一張書桌的婦女的照片。她戴著帶麥克風的耳機。<br/>客戶服務。西雅圖市政檔案館的CC-BY許可使用的照片。<br/>什麼是有禮貌的行為？</p>
+<p>與客戶互動時，保持良好的眼神交流，適度的語氣和積極的肢體語言極為重要。有禮貌的舉止可能包括溫暖或富有同情心的微笑。提供將客戶帶到更私密的位置進行進一步討論的提議；在流淚的情況下提供紙巾；如果客戶看起來非常苦惱，可以打電話給家庭成員，或者提供給客戶一些私密性，以便在恢復有關該問題的討論之前將自己團結起來。</p>
+<p>有時，公司因員工沒有表現出禮貌而失去業務。如果公司員工無禮或無益，他們可能會迅速失去有價值的客戶。正確使用電話禮節至關重要。每當您需要與同事討論情況時，都必須使電話靜音。與客戶聊天時，僅在適當的時候進行閒聊，並且僅談論天氣等無害的話題。如果必須擱置某人，請經常與該人核對。</p>
+<p>“這將比我想像的要花費更長的時間，您想繼續保留還是可以給您回電？”<br/>“找到答案後，能找到您的電話嗎？”<br/>期望管理至關重要：始終設定期望並滿足這些期望。不要承諾無法交付的東西。解決問題時，請保持積極的態度和語氣；如果您仍然喜歡，您將獲得更多的推薦和生意。請記住：客戶不是問題，客戶是有問題的人。因此，請勿與客戶爭論；只是解決問題。另外，不要最小化客戶的問題：對客戶來說，這是一個可怕的，悲劇性的大問題，需要他們解決。切勿將問題歸咎於客戶或對客戶作出判斷。說“如果您不訪問該網站，就不會遇到這個問題”，這無濟於事，只是侮辱。同樣，您的手機可以在與客戶互動時等待。給客戶充分的關注，避免分心。</p>
+<br />P.32 << <a href='P.32.html'>Previous</a> <a href='P.34.html'>Next</a> >> P.34</div>
+        
+    <!-- footer -->
+      <div class="container">
+        <div class="row pt-3 mx-auto">
+            <p>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+        </div>
+      </div>
+    <!-- for footer -->
+    
+        </div> <!-- for site wrap -->
+            <!-- <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script> -->
+            <script src="../cmsimde/static/chimper/js/jquery-migrate-3.0.1.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery-ui.js"></script>
+            <script src="../cmsimde/static/chimper/js/popper.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/owl.carousel.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.stellar.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.countdown.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.magnific-popup.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap-datepicker.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/aos.js"></script>
+            <!--
+            <script src="../cmsimde/static/chimper/js/typed.js"></script>
+                    <script>
+                    var typed = new Typed('.typed-words', {
+                    strings: ["Web Apps"," WordPress"," Mobile Apps"],
+                    typeSpeed: 80,
+                    backSpeed: 80,
+                    backDelay: 4000,
+                    startDelay: 1000,
+                    loop: true,
+                    showCursor: true
+                    });
+                    </script>
+            -->
+            <script src="../cmsimde/static/chimper/js/main.js"></script>
+        
+<!-- 啟用 LaTeX equations 編輯 -->
+  <!-- <script>
+  MathJax = {
+    tex: {inlineMath: [['$', '$'], ['\(', '\)']]}
+  };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>-->
+    </body></html>
+        

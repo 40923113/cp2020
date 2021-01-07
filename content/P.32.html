@@ -1,0 +1,220 @@
+<!DOCTYPE html><html>
+        <head>
+        <title>CMSiMDE</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900" rel="stylesheet">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/icomoon/style.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/magnific-popup.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/jquery-ui.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap-datepicker.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/flaticon/font/flaticon.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/aos.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/style.css">
+        <link rel="shortcut icon" href="./../cmsimde/static/favicons.png">
+        
+        <style type='text/css'>
+            .site-section {
+            background-color: #FFFF;
+            padding: 40px 40px;
+            }
+            body > div > div.dropdown.open {
+                display: block;
+            }
+        </style>
+    
+        <!-- <script src="./../cmsimde/static/jquery.js"></script> -->
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+        <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/normalize.min.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch_set.js"></script>
+        <script src="tipuesearch_content.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/tipuesearch.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch.js"></script>
+        <script>
+            /* original tipuesearch
+            $(document).ready(function() {
+                 $('#tipue_search_input').tipuesearch();
+            });
+            */
+            // customed doSearch
+            function doSearch() {
+                $('#tipue_search_input').tipuesearch({
+                    newWindow: true, 
+                    minimumLength: 2,
+                    wholeWords: false, // for search 中文
+                });
+            }
+            $(document).ready(doSearch);
+        </script>
+        
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shCore.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushBash.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDiff.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJScript.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJava.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPython.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushSql.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushHaxe.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushXml.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPhp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushLua.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCpp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCss.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCSharp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDart.js"></script>
+<link type="text/css" rel="stylesheet" href="./../cmsimde/static/syntaxhighlighter/css/shCoreDefault.css"/>
+<script type="text/javascript">SyntaxHighlighter.all();</script>
+<!-- 暫時不用
+<script src="./../cmsimde/static/fengari-web.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/Cango-13v08-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/CangoAxes-4v01-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/gearUtils-05.js"></script>
+-->
+<!-- for Brython 暫時不用
+<script src="https://scrum-3.github.io/web/brython/brython.js"></script>
+<script src="https://scrum-3.github.io/web/brython/brython_stdlib.js"></script>
+-->
+<style>
+img.add_border {
+    border: 3px solid blue;
+}
+</style>
+
+</head>
+<body>
+<div class='container'><nav>
+        
+    <div class="site-wrap">
+
+    <div class="site-mobile-menu">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+    
+            <header class="site-navbar py-4 bg-white" role="banner">
+              <div class="container-fluid">
+                <div class="row align-items-center">
+                <h1>40923113 cp2020</h1>
+                <div class="pl-4">
+                    <form>
+                    <input type="text" placeholder="Search" name="q" id="tipue_search_input" pattern=".{2,}" title="At least 2 characters" required>
+                    </form>
+                </div>
+                  <!-- <div class="col-11 col-xl-2">
+                    <h1 class="mb-0 site-logo"><a href="index.html" class="text-black h2 mb-0">40923113 cp2020</a></h1> 
+                  </div>
+                  -->
+                  <div class="col-12 col-md-10 d-none d-xl-block">
+                    <nav class="site-navigation position-relative text-right" role="navigation">
+    <ul class='site-menu js-clone-nav mr-auto d-none d-lg-block'>
+                        <li class="active has-children"><a href="index.html">Home</a>
+                        <ul class="dropdown">
+                            <li><a href="sitemap.html">Site Map</a></li>
+                            <li><a href="./../reveal/index.html">reveal</a></li>
+                            <li><a href="./../blog/index.html">blog</a></li>
+                        </ul>
+                      </li>
+                     <li><a href='About.html'>About</a><li><a href='Develop.html'>Develop</a><li class='has-children'><a href='Hw1.html'>Hw1</a><ul class='dropdown'><li><a href='P.19.html'>P.19</a><li><a href='P.20.html'>P.20</a><li><a href='P.21.html'>P.21</a><li><a href='P.22.html'>P.22</a><li><a href='P.23.html'>P.23</a><li><a href='P.24.html'>P.24</a><li><a href='P.25.html'>P.25</a><li><a href='P.26.html'>P.26</a><li><a href='P.27.html'>P.27</a><li><a href='P.29.html'>P.29</a><li><a href='P.30.html'>P.30</a><li><a href='P.31.html'>P.31</a><li><a href='P.32.html'>P.32</a><li><a href='P.33.html'>P.33</a><li><a href='P.34.html'>P.34</a><li><a href='P.35.html'>P.35</a><li><a href='P.36.html'>P.36</a></li></ul><li class='has-children'><a href='Hw3.html'>Hw3</a><ul class='dropdown'><li><a href='1..html'>1.</a><li><a href='2..html'>2.</a><li><a href='3..html'>3.</a><li><a href='4..html'>4.</a></li>
+                      </ul>
+                </nav>
+              </div>
+              <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
+              </div>
+
+            </div>
+          </div>
+          
+        </header>
+    <div id="tipue_search_content">P.31 << <a href='P.31.html'>Previous</a> <a href='P.33.html'>Next</a> >> P.33<br /><h1>P.32</h1>
+<p id="N10682" lang="">Customers expect that an employee will take ownership of a situation. Taking ownership means that the employee takes responsibility for the situation and reassures the customer that the employee will take action. The employee should follow through and follow up afterwards to make sure the situation was resolved to the customer’s satisfaction. The employee should also promise to keep the customer informed as to what is happening along the way. An employee who is truly taking ownership of a situation is in regular contact with the customer, is continually trying to resolve the problem, and strives to keep the customer in the information loop.</p>
+<p lang=""><strong>Apologizing When Appropriate</strong></p>
+<div class="section" id="N10685">
+<div class="sectionContain">
+<p id="N1068C" lang="">Another effective customer service principle is to apologize when it is appropriate. There are two types of apologies. One type is used when the employee is taking ownership of a problem and apologizing for something that his company did or did not do:</p>
+<ul lang="">
+<li lang="">"I am sorry that I did not call you back yesterday to follow up."</li>
+<li lang="">"I am sorry that our company did not ship the product that you ordered."</li>
+</ul>
+<p id="N10698" lang="">It is always appropriate to apologize for errors that your company has made and to try to resolve them to the best of your ability. It is especially important to apologize to a customer who has become angry or frustrated about the situation.</p>
+<p id="N1069B" lang="">In some cases, the customer is angry about a situation that is really not the company’s fault, and that may not be something that the company can resolve at that point in time. In these situations, it may be appropriate to offer kind and sympathetic words that sound somewhat like an apology in order to defuse the situation. Examples of this might include:</p>
+<ul lang="">
+<li lang="">"I am so sorry that you are frustrated."</li>
+<li lang="">"I am sorry that happened to you."</li>
+</ul>
+<p>客戶期望員工將擁有情況的所有權。擁有所有權意味著員工對情況負責，並向客戶保證員工將採取行動。員工應跟進並隨後跟進，以確保情況得到解決，以使客戶滿意。員工還應承諾使客戶了解沿途情況。真正掌握情況所有權的員工與客戶保持定期聯繫，正在不斷嘗試解決問題，並努力使客戶保持信息循環。</p>
+<p>適當道歉<br/>另一個有效的客戶服務原則是在適當的時候道歉。道歉有兩種類型。當員工對某個問題承擔所有權並為公司所做或未做的事情道歉時，使用一種類型：</p>
+<p>“很抱歉昨天我沒有給您回電話以跟進。”<br/>“對不起，我們公司沒有發貨您訂購的產品。”<br/>對公司所犯的錯誤深表歉意，並儘力解決這些錯誤。向對這種情況感到生氣或沮喪的客戶道歉尤其重要。</p>
+<p>在某些情況下，客戶會對這種情況感到生氣，這實際上不是公司的錯，而這可能不是公司當時可以解決的問題。在這種情況下，為了緩解這種情況，可能應該提供聽起來像道歉的友善和同情的詞。例如：</p>
+<p>“對不起，您感到沮喪。”<br/>“對不起，這件事發生在你身上。”</p>
+</div>
+</div>
+<div id="gtx-anchor" style="position: absolute; visibility: hidden; left: 8px; top: 178.375px; width: 183.141px; height: 15px;"></div>
+<div aria-describedby="bubble-3" class="jfk-bubble gtx-bubble" role="alertdialog" style="visibility: visible; left: 85px; top: 203px; opacity: 1;">
+<div class="jfk-bubble-content-id" id="bubble-3">
+<div id="gtx-host" style="min-width: 200px; max-width: 400px;"></div>
+</div>
+<div aria-label="Close" class="jfk-bubble-closebtn-id jfk-bubble-closebtn" role="button" tabindex="0"></div>
+<div class="jfk-bubble-arrow-id jfk-bubble-arrow jfk-bubble-arrowup" style="left: 91.5px;">
+<div class="jfk-bubble-arrowimplbefore"></div>
+<div class="jfk-bubble-arrowimplafter"></div>
+</div>
+</div>
+<br />P.31 << <a href='P.31.html'>Previous</a> <a href='P.33.html'>Next</a> >> P.33</div>
+        
+    <!-- footer -->
+      <div class="container">
+        <div class="row pt-3 mx-auto">
+            <p>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+        </div>
+      </div>
+    <!-- for footer -->
+    
+        </div> <!-- for site wrap -->
+            <!-- <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script> -->
+            <script src="../cmsimde/static/chimper/js/jquery-migrate-3.0.1.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery-ui.js"></script>
+            <script src="../cmsimde/static/chimper/js/popper.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/owl.carousel.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.stellar.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.countdown.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.magnific-popup.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap-datepicker.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/aos.js"></script>
+            <!--
+            <script src="../cmsimde/static/chimper/js/typed.js"></script>
+                    <script>
+                    var typed = new Typed('.typed-words', {
+                    strings: ["Web Apps"," WordPress"," Mobile Apps"],
+                    typeSpeed: 80,
+                    backSpeed: 80,
+                    backDelay: 4000,
+                    startDelay: 1000,
+                    loop: true,
+                    showCursor: true
+                    });
+                    </script>
+            -->
+            <script src="../cmsimde/static/chimper/js/main.js"></script>
+        
+<!-- 啟用 LaTeX equations 編輯 -->
+  <!-- <script>
+  MathJax = {
+    tex: {inlineMath: [['$', '$'], ['\(', '\)']]}
+  };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>-->
+    </body></html>
+        

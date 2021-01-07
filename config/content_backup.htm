@@ -1,0 +1,465 @@
+<h1>About</h1>
+<p>此內容管理系統以 <a href="https://github.com/mdecourse/cmsimde">https://github.com/mdecourse/cmsimde</a> 作為 submodule 運作, 可以選定對應的版本運作, cmsimde 可以持續改版, 不會影響之前設為 submodule, 使用舊版 cmsimde 模組的內容管理相關運作.</p>
+<h4>利用 cmsimde 建立靜態網誌方法:</h4>
+<p>1. 在 github 建立倉儲, git clone 到近端</p>
+<p>2. 參考 <a href="https://github.com/mdecourse/newcms">https://github.com/mdecourse/newcms</a>, 加入除了 cmsimde 目錄外的所有內容</p>
+<p>以 git submodule add <a href="https://github.com/mdecourse/cmsimde">https://github.com/mdecourse/cmsimde</a> cmsimde</p>
+<p>建立 cmsimde 目錄, 並從 github 取下子模組內容.</p>
+<p>3.在近端維護時, 更換目錄到倉儲中的 cmsimde, 以 python wsgi.py 啟動近端網際伺服器.</p>
+<p>動態內容編輯完成後, 以 generate_pages 轉為靜態內容, 以 git add commit 及 push 將內容推到遠端.</p>
+<p>4. 之後若要以 git clone 取下包含 submodule 的所有內容, 執行:</p>
+<p>git clone --recurse-submodules <a href="https://github.com/mdecourse/newcms.git">https://github.com/mdecourse/newcms.git</a></p>
+<h1>Develop</h1>
+<p><a href="https://github.com/mdecourse/cmsimde">https://github.com/mdecourse/cmsimde</a> 的開發, 可以在一個目錄中放入 cmsimde, 然後將 up_dir 中的內容放到與 cmsimde 目錄同位階的地方, 使用 command 進入 cmsimde 目錄, 執行 python wsgi.py, 就可以啟動, 以瀏覽器 https://localhost:9443 就可以連接, 以 admin 作為管理者密碼, 就可以登入維護內容.</p>
+<p>cmsimde 的開發採用 Leo Editor, 開啟 cmsimde 目錄中的 cmsimde.leo 就可以進行程式修改, 結束後, 若要保留網際內容, 只要將 cmsimde 外部的內容倒回 up_dir 目錄中即可後續對 cmsimde 遠端倉儲進行改版.</p>
+<p>init.py 位於  up_dir 目錄, 可以設定 site_title 與 uwsgi 等變數.</p>
+<h1>Hw1</h1>
+<h2>P.19</h2>
+<p>This lesson covers the basic procedures and safety precautions with which technicians must be competent and comfortable before working on various PC hardware. First we will discuss the hazards of computer systems and tools, including electricity, electrostatic discharge (ESD), chemicals, and other dangers that can hurt you when you are working on the various forms of computer hardware. We will also cover the safety measures and procedures that you must employ to minimize risk, such as using ESD straps, ESD mats, self-grounding systems, and equipment grounding. We will then discuss personal safety, including removal of jewelry to protect yourself and computers, proper lifting techniques and weight limitations, and removal of electrical power. Finally, we will cover electrical fire safety, cathode ray tube (CRT) safety and disposal, cable management, and local government regulation compliance.</p>
+<p>本課程涵蓋了基本程序和安全預防措施，技術人員在使用各種PC硬件之前必須具備一定的能力和舒適度。 首先，我們將討論計算機系統和工具的危害，包括電流，靜電釋放（ESD），化學物質以及在使用各種形式的計算機硬件時可能傷害您的其他危害。 我們還將介紹必須使用的安全措施和規程，以最大程度地降低風險，例如使用ESD帶，ESD墊，自接地系統和設備接地。 然後，我們將討論人身安全，包括為保護自己和計算機而移走珠寶，適當的舉陞技術和重量限制以及移去電源。 最後，我們將涵蓋電氣消防安全，陰極射線管（CRT）安全和處置，電纜管理以及地方政府法規合規性。</p>
+<h2>P.20</h2>
+<p id="N10680" lang="">Electricity is a significant hazard in working with computer systems and tools. Electricity is required to make workstations operate, but if you are not careful, electricity can cause serious injury to you and major damage to the computer you are working on.</p>
+<p id="N10683" lang="">With regard to human injury, technicians can receive an electrical shock from computers or electrical outlets if special care is not taken when working with them. It is important to check all the power outlets to ensure they are working properly. When checking the outlets, you should verify that the outlet is providing the correct amount of power. If you are working in the United States, then you should expect to receive a voltage of 115 VAC to 120 VAC (volts of alternating current) from the power outlets in an office or home. This can be verified using a simple three-prong tester, voltmeter, or multimeter. Procedurally, you must never pull the cords out by the wires, as this can cause damage and fraying of the cables. Instead, you should plug in and remove cables by the plug on the end of the cord. It is important that you never use a frayed or damaged power cable.</p>
+<p id="N10686" lang="">In addition to keeping themselves safe, technicians need to keep computers safe from electrical damage. It is common to use a surge protector to protect computers from power spikes or surges. A power strip is not the same thing as a surge protector. Surge protectors are rated in joules (J), a unit of energy. The rating indicates the number of joules the surge protector can absorb before failure. A higher rating indicates greater protection for the computer. Also, you must not overload the surge protectors, and must never daisy-chain them, or plug one surge protector into another: this causes higher amperage draws that can lead to fires.</p>
+<div class="imagewrap"><span class="image"><img alt="Photograph of an electrical outlet with an extension    plugged into a second extension with multiple devices plugged into it." class="popimg" id="_i_0" onclick="loadImageFromPage(this);" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH02/webcontent/PCH02/image1.jpeg" title="Photograph of an electrical outlet with an extension    plugged into a second extension with multiple devices plugged into it."/></span><span class="caption" lang="">Overloaded electrical outlet. Photo used under CC-BY license from<span> </span><a href="https://flic.kr/p/7r9VUz" id="_i_1" lang="" target="_blank">Gordon Wrigley</a>.</span></div>
+<p id="N10696" lang="">If continuous power to a workstation is necessary, you can use an uninterruptible power supply (UPS). A UPS should never be used for laser printers, as it draws too much power through the UPS and can cause damage to the printer.</p>
+<p>電力是使用計算機系統和工具的重大危險。要使工作站正常工作，必須通電，但是如果不小心，電流可能會對您造成嚴重傷害，並嚴重損壞您正在使用的計算機。</p>
+<p>關於人身傷害，如果在操作計算機或電源插座時未特別注意，則技術人員可能會從計算機或電源插座中遭受電擊。檢查所有電源插座以確保它們正常工作很重要。檢查插座時，應驗證插座是否提供了正確的電量。如果您在美國工作，則應該期望從辦公室或家庭的電源插座接收到115 VAC至120 VAC（交流電壓）的電壓。可以使用簡單的三叉測試儀，電壓表或萬用表進行驗證。程序上，切勿將電線從電線中拉出，因為這會導致電纜損壞和磨損。相反，您應該插入插頭並通過電源線末端的插頭拔出電纜。切勿使用磨損或損壞的電源線，這一點很重要。</p>
+<p>除了保護自己的安全外，技術人員還需要保護計算機免受電氣損壞。通常使用電湧保護器來保護計算機免受電源尖峰或電湧的影響。配電盤與電湧保護器不是一回事。電湧保護器的額定功率單位為焦耳（J）。額定值表示電湧保護器在故障之前可以吸收的焦耳數。額定值越高，表示對計算機的保護越高。另外，您一定不能使電湧保護器過載，也不能以菊花鏈的方式將它們電擊，也不能將一個電湧保護器插入另一個電湧保護器：這會導致更高的安培數消耗，從而引發火災。</p>
+<p>電源插座的圖片，其中擴展程序已插入第二個擴展程序，其中已插入多個設備。<br/>電源插座過載。照片由Gordon Wrigley根據CC-BY許可使用。<br/>如果需要為工作站持續供電，則可以使用不間斷電源（UPS）。切勿將UPS用於激光打印機，因為它會通過UPS消耗過多功率，並可能損壞打印機。</p>
+<h2>P.21</h2>
+<p lang=""><span> </span></p>
+<p id="N10683" lang="">Technicians should use surge protectors or surge suppressors to protect computers from power spikes and surges. These devices are specifically designed to absorb overvoltage conditions that would damage computers, printers, and monitors. While these devices will protect the computer from damage resulting from an overvoltage condition, they do not protect it from an undervoltage condition. Undervoltage is a condition that occurs when insufficient voltage is provided by the outlet to the computer. In situations where it is essential that the computer not lose power, technicians must install an uninterruptible power supply (UPS) to provide emergency power when a power failure (blackout) occurs or an undervoltage condition (brownout) occurs. The UPS runs the computer from its internal battery continuously and recharges the UPS’s battery while power is available. Once power is lost, the UPS continues to power the computer for up to 15 minutes (purportedly). This provides the user enough time to save work and safely power down the workstation. Another device that helps in undervoltage conditions is the standby power supply (SPS), which runs the computer directly from the wall outlet (AC power), but switches to the battery in less than a millisecond when a power outage occurs. An SPS device does not provide constant power, like a UPS device. For this reason, most technicians prefer UPS devices over SPS devices, so UPS devices are much more common in the marketplace.</p>
+<div class="imagewrap"><span class="image"><img alt="Photograph of uninterruptible power supply with six    electrical outlets." class="popimg" id="_i_0" onclick="loadImageFromPage(this);" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH02/webcontent/PCH02/image3.png" title="Photograph of uninterruptible power supply with six    electrical outlets."/></span><span class="caption" lang="">Uninterruptible power supply. Photo </span></div>
+<div class="imagewrap"><span class="caption" lang="">used under CC-BY license from<span> </span><a href="https://flic.kr/p/9gN6dq" id="_i_1" lang="" target="_blank">Wonderlane</a>.</span></div>
+<div class="imagewrap"><span class="caption" lang="">技術人員應使用電湧保護器或電湧抑制器來保護計算機免受電湧和電湧的影響。這些設備經過專門設計，可以吸收可能損壞計算機，打印機和顯示器的過電壓情況。儘管這些設備可以保護計算機免受過壓狀態造成的損壞，但它們不能保護計算機免受欠壓狀態的影響。當計算機的插座提供的電壓不足時，就會發生欠壓情況。在必須確保計算機不掉電的情況下，技術人員必須安裝不間斷電源（UPS），以在發生電源故障（停電）或發生欠壓狀況（斷電）時提供應急電源。 UPS會使用其內部電池連續運行計算機，並在有電時為UPS的電池充電。一旦斷電，UPS將繼續為計算機供電長達15分鐘（據稱）。這為用戶提供了足夠的時間來節省工作並安全地關閉工作站電源。備用電源（SPS）是在欠壓情況下提供幫助的另一種設備，該備用電源直接從壁裝電源插座（交流電源）運行計算機，但在斷電時不到一毫秒即可切換到電池。 SPS設備不像UPS設備那樣提供恆定功率。因此，大多數技術人員更喜歡UPS設備而不是SPS設備，因此UPS設備在市場上更為普遍。<br/><br/>具有六個電源插座的不間斷電源的照片。<br/>不間斷電源供應。照片由Wonderlane根據CC-BY許可使用。</span></div>
+<h2>P.22</h2>
+<p><span>It is important to understand the technical terms for the various undervoltage and overvoltage conditions that could exist, such as power surge, dirty power, sag, brownout, and blackout, as well as the device that provides protection to the computers and computer system equipment when these conditions occur. A power surge occurs when a short increase in AC voltage happens, such as from 120 VAC to 130 VAC. To protect computers from this condition, you would use a surge suppressor. Dirty power occurs when AC voltage continuously fluctuates, for example between 113 VAC and 130 VAC. To correct this condition, an in-line UPS or line conditioner should be used. A sag occurs when an unexpected short decrease in voltage occurs. This can be corrected with either a line conditioner or a UPS. A brownout is a more significant, larger voltage drop than a sag, and could result in the voltage being cut in half (such as 120 VAC dropping to 60 VAC). This is too much for a line conditioner to handle, so a UPS would be required. Finally, if there is a complete loss of power, this is called a blackout. Only a UPS can solve this problem, but only for a short duration (purportedly about 15 minutes). If operations must continue after this, you would need to switch to a backup generator to provide the power required.</span></p>
+<p><span>重要的是要理解可能存在的各種欠壓和過壓條件的技術術語，例如電湧，臟電源，跌落，掉電和停電，以及在以下情況下為計算機和計算機系統設備提供保護的設備：這些情況發生。當交流電壓發生短暫升高（例如從120 VAC到130 VAC）時，就會發生電湧。為了保護計算機免受這種情況的影響，應使用電湧抑制器。當交流電壓持續波動（例如在113 VAC和130 VAC之間）時，會產生臟電。要糾正這種情況，應使用串聯式UPS或線路調節器。當電壓出現意外的短時下降時，就會發生下垂。可以使用電源調節器或UPS進行糾正。掉電比下垂更為顯著且電壓降更大，並且可能導致電壓降低一半（例如120 VAC降至60 VAC）。對於線路調節器來說，這太多了，因此需要UPS。最後，如果完全斷電，則稱為停電。只有UPS可以解決此問題，但只能持續很短的時間（據說大約15分鐘）。如果此後必須繼續操作，則需要切換到備用發電機以提供所需的電源。</span></p>
+<h2>P.23</h2>
+<p><span>Electricity can be a common cause of fire, especially if the electrical circuits are overloaded. If a computer or outlet catches on fire, you should use a class C extinguisher, which is a carbon dioxide (CO</span><sub lang="">2</sub><span>)-based extinguisher. You should not attempt to extinguish an electrical fire with water, because water conducts electricity. If the fire is small, you may use a portable extinguisher to put the fire out immediately, but you should never put yourself in harm’s way. If the fire begins to get out of control, everyone should move to a safe area and call 911 for help immediately. Some server rooms have built-in fire suppression systems that release CO</span><sub lang="">2<span> </span></sub><span>or halon when a fire alarm occurs. Halon is a toxic compressed gas, in liquid form, that chemically disrupts a combustion reaction. A CO</span><sub lang="">2<span> </span></sub><span>system is designed to flood the room with carbon dioxide in order to remove all oxygen from the room, thereby killing the fire. People who are working in a server room and hear the fire alarm sounding must immediately vacate the area and get to a safe location. This is a life-threatening situation, both because of the fire and because of the potentially lethal nature of the fire-suppression systems.</span></p>
+<p><span>電力可能是引起火災的常見原因，尤其是在電路過載的情況下。如果計算機或插座著火，則應使用C類滅火器，它是一種基於二氧化碳（CO2）的滅火器。您不應嘗試用水滅火，因為水可以導電。如果火很小，則可以使用便攜式滅火器將火立即撲滅，但絕對不要傷害自己。如果火勢開始失控，所有人應移至安全區域並立即撥打911尋求幫助。一些服務器機房具有內置的滅火系統，當發生火災警報時，這些系統會釋放CO2或哈龍。哈龍是有毒的壓縮氣體，呈液態，化學上會破壞燃燒反應。 CO2系統設計用於向房間充斥二氧化碳，以清除房間中的所有氧氣，從而撲滅大火。在服務器機房工作並聽到火警警報的人員必須立即離開該區域並到達安全位置。由於起火以及滅火系統的潛在致命特性，這是威脅生命的情況。</span></p>
+<h2>P.24</h2>
+<p id="N1068F" lang="">Another major safety hazard for computer systems and components is electrostatic discharge (ESD). ESD damage is caused by the discharge of static electricity that has been built up by the human body in the course of everyday events, such as walking, standing and sitting at our desks, and other activities. In drier (less humid) environments, static electricity builds up more quickly and becomes more of an issue. This is especially true during winter months. While static electricity cannot directly harm humans very much, it can be deadly to computer components. A person builds static electricity that can reach 20,000 to 25,000 volts, but is of a low amperage (making it safe for humans). When you touch something of lower electrical potential, such as the metal case of the computer or the circuit board of an expansion card, the static electricity in your body is discharged into that component, causing damage. If you touch a circuit board without taking ESD precautions, ESD may occur and cause permanent failure or an intermittent failure of the component.</p>
+<p id="N10692" lang="">You can protect computer equipment from ESD fairly easily. First, you should use an antistatic wrist strap, also known as an ESD strap.</p>
+<div class="imagewrap"><span class="image"><img alt="Photograph of ESD strap that contains a metal clip on one    end of an extendable cord with a wrist strap on the other end." class="popimg" id="_i_0" onclick="loadImageFromPage(this);" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH02/webcontent/PCH02/image4.png" title="Photograph of ESD strap that contains a metal clip on one    end of an extendable cord with a wrist strap on the other end."/></span><span class="caption" lang="">ESD strap. Photo used under CC-BY-ND license from<span> </span><a href="https://flic.kr/p/7dKWV3" id="_i_1" lang="" target="_blank">Carl Bereley</a>.</span></div>
+<p id="N106A2" lang="">These devices are very inexpensive and are the best method of protecting equipment against ESD. To be effective, one end of the strap must be grounded (by clipping it to something such as to the bare metal of the computer case), and the other end is placed around your wrist like a bracelet. This continually causes a discharge from the body to the computer case, thereby protecting the internal computer components. Because of the high voltage present inside a cathode ray tube (CRT) monitor, you should not wear an ESD wrist strap when working inside a CRT monitor.</p>
+<p id="N106A5" lang="">If you do not have an ESD strap, you can employ the second precautionary method, called grounding against the chassis. In this method, you touch any unpainted metal part of the computer case to discharge the static electricity from your body before touching the sensitive components (such as expansion cards). This method is quite good, but you must remember to ground yourself against the case<span> </span><em class="bold" lang="">every<span> </span></em>time before touching a component. The last precautionary method is to use anti-static bags. This procedure is useful during transport of various components. Basically, you place the components and cards inside the anti-static bag to protect them from ESD while you are carrying them from one location to another.</p>
+<div class="imagewrap"><span class="image"><img alt="Photograph of a plastic ziploc bag with cushioning bubbles    and a sticker reading 'Caution: contents subject to damage by static    electricity; do not open.'" class="popimg" id="_i_2" onclick="loadImageFromPage(this);" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH02/webcontent/PCH02/image5.png" title="Photograph of a plastic ziploc bag with cushioning bubbles    and a sticker reading 'Caution: contents subject to damage by static    electricity; do not open.'"/></span><span class="caption" lang="">Anti-static bag. Photo used under CC-BY license from<span> </span><a href="https://flic.kr/p/rReCz" id="_i_3" lang="" target="_blank">Joe Hall</a>.</span></div>
+<p id="N106B9" lang="">To prevent ESD we must ensure we handle components properly. Never touch the face of the cards where the components and wiring are located; only handle cards by the edges. Additionally, always use proper ESD straps or grounding techniques before handling the cards. You also should remove jewelry and avoid loose clothes, since they may get caught in the computer or inadvertently cause a static charge to be transferred into a component. Another great technique is the use of an anti-static mat or workbench. Many server rooms and IT shops have these mats installed, and they provide a good method of keeping yourself grounded while working. You can also raise the humidity of the room to minimize the chances of static build-up. Most computer server rooms keep humidity between 40 and 50 percent to minimize electrostatic build-up, but often you will not have control over the humidity as a technician. You also want to avoid carpeted areas when possible, as walking across carpet creates a faster buildup of static electricity in the body. Finally, never use electrical or magnetic tools on the workstation, as the electrical motors from drills, impact wrenches, and vacuums create static electricity that can be discharged into fragile components.</p>
+<p>計算機系統和組件的另一個主要安全隱患是靜電放電（ESD）。 ESD損壞是由人體在日常活動過程中（例如走路，站立和坐在辦公桌旁以及其他活動中）積聚的靜電釋放引起的。在乾燥（濕度較低）的環境中，靜電積聚更快，成為一個更大的問題。冬季尤其如此。儘管靜電不會直接對人類造成太大傷害，但對計算機組件而言可能是致命的。一個人積聚的靜電可以達到20,000到25,000伏，但電流強度很低（對人類安全）。當您觸摸電勢較低的物體（例如計算機的金屬外殼或擴充卡的電路板）時，體內的靜電會釋放到該組件中，從而造成損壞。如果在未採取ESD預防措施的情況下觸摸電路板，則可能會發生ESD，並導致組件永久性故障或間歇性故障。</p>
+<p>您可以相當容易地保護計算機設備免受ESD的影響。首先，應使用防靜電腕帶，也稱為ESD腕帶。</p>
+<p>ESD腕帶的照片，該腕帶的一端包含一個金屬夾，另一端帶有腕帶。<br/>防靜電腕帶。照片由Carl Bereley根據CC-BY-ND許可使用。<br/>這些設備非常便宜，是保護設備免受ESD影響的最佳方法。為使之有效，必須將腕帶的一端接地（通過將其修剪到諸如計算機機殼裸露的東西上），另一端像手鐲一樣放在手腕上。這連續地導致從身體向計算機機殼的放電，從而保護了內部計算機組件。由於陰極射線管（CRT）顯示器內部存在高壓，因此在CRT顯示器內部工作時，請勿佩戴ESD腕帶。</p>
+<p>如果沒有ESD綁帶，則可以採用第二種預防方法，即與機箱接地。通過這種方法，在觸摸敏感組件（例如擴展卡）之前，請觸摸計算機機箱上任何未上漆的金屬部分，以釋放身上的靜電。這種方法相當不錯，但是每次觸摸組件之前，您都必須記住要使自己始終與外殼接觸。最後一種預防方法是使用防靜電袋。此過程在運輸各種組件時很有用。基本上，將組件和卡從一個位置搬運到另一位置時，請將其放置在防靜電袋中，以防靜電。</p>
+<p>帶有緩沖氣泡和標有“注意：內容物可能被靜電損壞；不要打開。'<br/>防靜電袋。照片由Joe Hall根據CC-BY許可使用。<br/>為了防止ESD，我們必須確保正確處理組件。切勿觸摸組件和配線所在的卡的表面；只能處理邊緣的卡。此外，在處理插卡之前，請始終使用正確的ESD腕帶或接地技術。您還應卸下珠寶首飾並避免穿寬鬆的衣服，因為它們可能會卡在計算機中或無意間將靜電轉移到組件中。另一個很棒的技術是使用防靜電墊或工作台。許多服務器機房和IT商店都安裝了這些墊子，它們是在工作時保持接地的一種好方法。您還可以提高房間的濕度，以最大程度減少靜電積聚的機會。大多數計算機服務器機房將濕度保持在40％到50％之間，以最大程度地減少靜電積聚，但是作為技術人員，您通常無法控制濕度。您還希望盡可能避免舖有地毯的區域，因為在地毯上行走會在體內更快地積聚靜電。最後，切勿在工作站上使用電動工具或電磁工具，因為鑽頭，衝擊扳手和真空吸塵器產生的電動機會產生靜電，這些靜電會排放到易碎的部件中。</p>
+<h2>P.25</h2>
+<p id="N10680" lang="">So, what is the best range of environmental controls to protect our workstations and provide our computers with the best operating environment? For temperature, we seek a range of 68-76 degrees Fahrenheit, and we attempt to keep the humidity between 20 and 60 percent. If the humidity is higher, it prevents electrostatic buildup. If the humidity is too high, though, condensation and water vapor can occur. It is a fragile balance, but the best rule of thumb is that if humans are comfortable, the environment is probably within the specifications. Also, we need to ensure proper ventilation for both people and computers. We want to minimize the dust in the environment and ensure adequate cooling to remove the heat created by the workstations.</p>
+<p id="N10683" lang="">Additionally, we need to consider the chemicals that we often encounter in our daily jobs. Each product that uses chemicals must have a material safety data sheet (MSDS) with it. This sheet includes the proper treatment if a person comes into contact with the substance, how to deal with chemical spills, how to properly dispose of the chemicals, and proper storage of the substance. MSDS are required for<span> </span><em class="bold" lang="">all<span> </span></em>products with chemicals, including things like window cleaning solution as well as more complex compounds like the thermal paste that we use in workstations.</p>
+<p>那麼，保護我們的工作站並為我們的計算機提供最佳操作環境的最佳環境控制範圍是什麼？對於溫度，我們尋求的溫度範圍為華氏68-76度，並且嘗試將濕度保持在20％到60％之間。如果濕度較高，則可防止靜電積聚。但是，如果濕度太高，則會發生冷凝和水蒸氣。這是一個脆弱的平衡，但是最好的經驗法則是，如果人類感到舒適，則環境可能在規格範圍內。此外，我們需要確保人和計算機的通風良好。我們希望最大程度地減少環境中的灰塵，並確保充分冷卻以消除工作站產生的熱量。</p>
+<p>此外，我們需要考慮日常工作中經常遇到的化學物質。每個使用化學藥品的產品都必須隨附材料安全數據表（MSDS）。該表包括如果有人接觸該物質應進行的適當處理，如何處理化學溢出物，如何正確處理該化學物質以及正確地存儲該物質。所有含化學物質的產品都需要MSDS，包括窗戶清潔液以及更複雜的化合物（例如我們在工作站中使用的導熱膏）。</p>
+<h2>P.26</h2>
+<p id="N10678" lang="">Since we have considered the electrical dangers a technician might face, we must also consider the physical dangers. As information technology technicians, we often are involved in the “rollout” and replacement of existing systems, and in moving equipment from one office area to another. In this portion of our jobs, we often have to move hundreds of computers. Remember, the number one cause of injury for computer technicians is lifting items that are too heavy for us. A couple of rules of thumb to prevent injury: Do not lift anything over 25 percent of your own weight without assistance. Second, remember to always lift with your legs, not your back. If you follow these two simple rules, you can avoid the most common injuries in the workplace.</p>
+<p id="N1067B" lang="">Another area of concern is our impatience. Often when we go to work on a computer, we first turn off the machine and then open it up. Many of us forget that the computer may have been on and running for the past several days or weeks, building up an enormous amount of heat that can cause burns. It is a good idea to wait at least 15 minutes before touching items at the workstation, such as a laser printer’s fuser, the central processing unit (CPU) of the computer, or the power supply of the computer. These areas tend to generate the most heat and need time to dissipate the heat prior to maintenance.</p>
+<p id="N1067E" lang="">Finally, we must be wary of how we route cables, and must practice proper cable management. Do not run cables in the walkways or through places where employees may trip over them. If a worker trips on the cord, not only will the worker get hurt, but the workstation itself could be pulled off the desk and damaged. Place the computer and cables in a place where adequate air flow can occur; otherwise, the computer may overheat and have issues functioning. Finally, always remember to check local regulations when installing new network cables. Some areas require certain licenses or certifications, such as an electrician’s license, to run network cables. Also, you will need to install<span> </span><a aria-describedby="N10682" class="extra" id=""></a>plenum-rated cables<span> </span>if you are running them in areas such as the ceiling, where ventilation systems are found.</p>
+<div class="imagewrap"><span class="image"><img alt="Photograph of multiple cables running in the same    direction that are tied together with small straps about one foot apart. The    wrapped cables branch off with half of the wires going to different devices. The    branched cable clusters are channelled on different shelves." class="popimg" id="_i_0" onclick="loadImageFromPage(this);" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH02/webcontent/PCH02/image6.png" title="Photograph of multiple cables running in the same    direction that are tied together with small straps about one foot apart. The    wrapped cables branch off with half of the wires going to different devices. The    branched cable clusters are channelled on different shelves."/></span><span class="caption" lang="">Proper cable management. Photo used under CC-BY-NC license from<span> </span><a href="https://flic.kr/p/4XV5hQ" id="_i_1" lang="" target="_blank">Adrian Black</a>.</span></div>
+<p id="N10698" lang="">So, why is cable management so important? Well, imagine your boss just told you that her workstation lost its connection to the network. You run down to the server room to see if you can troubleshoot her connection. You look first to check if her cable is plugged in, but you find the mess of cables below. How do you determine which is your boss’ connection? This mess causes issues with ventilation, cooling, and more importantly issues when trying to troubleshoot. Always run the cabling with proper cable management techniques and label the cables to assist you in the future during troubleshooting.</p>
+<div class="imagewrap"><span class="image"><img alt="Photograph of multiple devices on racks with a myriad of    tangled cables connecting the devices. Some of the cables are sagging to the    floor." class="popimg" id="_i_2" onclick="loadImageFromPage(this);" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH02/webcontent/PCH02/image7.png" title="Photograph of multiple devices on racks with a myriad of    tangled cables connecting the devices. Some of the cables are sagging to the    floor."/></span><span class="caption" lang="">Unsafe cables. Photo used under CC-BY-SA license from<span> </span><a href="https://flic.kr/p/6uyyCC" id="_i_3" lang="" target="_blank">Cloned Milkmen</a>.</span></div>
+<div class="imagewrap"><span class="image"><img alt="Photograph of cables plugged into a network device. All    cables are labeled with a typed label displaying a unique number on each." class="popimg" id="_i_4" onclick="loadImageFromPage(this);" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH02/webcontent/PCH02/image8.jpeg" title="Photograph of cables plugged into a network device. All    cables are labeled with a typed label displaying a unique number on each."/></span><span class="caption" lang="">Labeled cables. Photo used under CC-BY-NC-ND license from<span> </span><a href="https://www.flickr.com/photos/jiscimages/" id="_i_5" lang="" target="_blank">Jisc</a>.</span></div>
+<div class="imagewrap"><span class="caption" lang="">由於我們已經考慮了技術人員可能面臨的電氣危險，因此我們還必須考慮物理危險。作為信息技術人員，我們經常參與“部署”和替換現有系統，以及將設備從一個辦公區域轉移到另一個辦公區域。在這部分工作中，我們經常不得不移動數百台計算機。請記住，計算機技術人員受傷的首要原因是提起對我們來說太重的物品。防止受傷的一些經驗法則：不要在沒有幫助的情況下舉起超過自身體重25％的東西。其次，請記住始終抬起雙腿，而不是背部。如果遵循這兩個簡單規則，則可以避免在工作場所中最常見的傷害。<br/><br/>另一個值得關注的領域是我們的耐心。通常，當我們在計算機上工作時，我們首先關閉機器，然後再將其打開。我們中的許多人都忘記了計算機可能已經在過去的幾天或幾週內開機並運行，從而積聚了大量的熱量，可能引起灼傷。最好等待至少15分鐘，然後再觸摸工作站上的物品，例如激光打印機的定影器，計算機的中央處理器（CPU）或計算機的電源。這些區域會產生最多的熱量，並且在維護之前需要時間消散熱量。<br/><br/>最後，我們必須警惕如何佈設電纜，並且必須進行適當的電纜管理。請勿在走道或員工可能絆倒的地方穿過電纜。如果工人用電線絆倒，不僅會受傷，而且工作站本身可能會從桌子上拉下來並損壞。將計算機和電纜放置在可產生足夠空氣流通的地方；否則，計算機可能會過熱並出現問題。最後，在安裝新的網絡電纜時，切記要檢查當地法規。有些地區需要某些許可證或證明（例如電工許可證）才能運行網絡電纜。另外，如果要在通風良好的區域（例如天花板）上鋪設增壓電纜，則需要安裝增壓電纜。<br/><br/>沿同一方向延伸的多條電纜的照片，這些電纜用細帶子綁在一起，相距約一英尺。包裹的電纜分支出來，一半的電線連接到不同的設備。分支的電纜束在不同的機架上引導。<br/>正確的電纜管理。照片由Adrian Black根據CC-BY-NC許可使用。<br/>那麼，為什麼電纜管理如此重要？好吧，想像一下您的老闆剛剛告訴您她的工作站失去了與網絡的連接。您跑到服務器機房查看是否可以解決她的連接故障。您首先要檢查她的電纜是否已插入，但在下面發現電纜亂七八糟。您如何確定老闆的聯繫方式？這種混亂會導致通風，冷卻問題，更重要的是，嘗試進行故障排除時會出現問題。始終使用適當的電纜管理技術來佈線，並標記電纜，以在將來進行故障排除時為您提供幫助。<br/><br/>機架上的多個設備的照片，其中有大量纏結的電纜連接設備。一些電纜垂到地板上。<br/>不安全的電纜。照片由Cloned Milkmen根據CC-BY-SA許可使用。<br/>插入網絡設備的電纜的照片。所有電纜都貼有帶標籤的標籤，每個標籤上都有一個唯一的編號。<br/>帶標籤的電纜。圖片來自Jisc的CC-BY-NC-ND許可。</span></div>
+<h2>P.27</h2>
+<p><span>Many older monitors you may find in the field are CRT monitors. These older monitors look like old televisions. These monitors tend to be very heavy, with 30” or larger models weighing nearly a hundred pounds. It is important to remember your lifting rules before moving these monitors. Most people are upgrading these old monitors to LCD or LED models, since they offer better picture quality and are much lighter. Many locations have special disposal rules for these devices. Many localities have a requirement to recycle monitors at a central waste facility. Finally, these monitors use capacitors to perform their functions. You must be careful not to open these monitors, as they can have 10,000-20,000 volts of potential voltage, even when they have been unplugged for long periods of time.</span></p>
+<p><span>您可能在現場發現的許多較舊的顯示器都是CRT顯示器。 這些較舊的監視器看起來像舊電視。 這些監視器往往非常重，具有30英寸或更大的型號，重近一百磅。 在移動這些顯示器之前，請記住您的舉升規則，這一點很重要。 大多數人都將這些舊顯示器升級為LCD或LED型號，因為它們提供了更好的圖像質量並且更輕。 許多位置對於這些設備都有特殊的處置規則。 許多地方都要求在中央廢物處理設施回收監測器。 最後，這些監視器使用電容器來執行其功能。 您必須小心不要打開這些顯示器，因為它們可能具有10,000-20,000伏的潛在電壓，即使長時間拔下電源也是如此。</span></p>
+<h2>P.29</h2>
+<p id="N1066B" lang="">In this lesson we will be discussing the standards of professional business conversations and the basics of customer service. We will discuss the importance of avoiding distractions and the best practices in customer service and communication.</p>
+<p id="N1066E" lang="">Content has been derived from the<span> </span><a href="http://oli.cmu.edu/courses/free-open/stem-readiness/" id="_i_0" lang="" target="_blank">STEM Readiness course</a><span> </span>by the National STEM Consortium under a CC-BY license.</p>
+<p>在本課程中，我們將討論專業商務對話的標準和客戶服務的基礎。 我們將討論避免分心的重要性以及客戶服務和溝通中的最佳做法。</p>
+<p>內容是根據CC-BY許可從國家STEM聯盟的STEM準備課程中獲得的。</p>
+<h2>P.30</h2>
+<p id="N10678" lang="">The first thing we need to realize is that working in the information technology (IT) field is working in a customer service field. The IT field is unique in its own way, but it’s driven by customer service. While the standards of professional business conversations generally apply, there is also the unique aspect of the technician possessing “special knowledge” that a more senior professional may not possess. For example, a person whose computer you are there to fix may be a senior manager at your company, but they may have no idea about how to fix computers. You must, then, remain calm and measured in responding to the client’s needs, yet remain authoritative in your body of knowledge and procedures. This can be difficult for new technicians. Remember, always be kind and patient: the client needs your help!</p>
+<div class="imagewrap"><span class="image"><img alt="Photograph of a librarian assisting a library patron at    the circulation desk. The librarian is showing the patron her computer screen, and    pointing out relevant information to the patron." class="popimg" id="_i_0" onclick="loadImageFromPage(this);" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH03/webcontent/PCH03/image1.png" title="Photograph of a librarian assisting a library patron at    the circulation desk. The librarian is showing the patron her computer screen, and    pointing out relevant information to the patron."/></span><span class="caption" lang="">Photo used under CC-BY-SA license from<span> </span><a href="https://flic.kr/p/5LqyNr" id="_i_1" lang="" target="_blank">Manchester</a><a href="https://flic.kr/p/5LqyNr" id="_i_2" lang="" target="_blank">City Library</a>.</span></div>
+<div class="section" id="N1068B">
+<div class="sectionContain">
+<p>Customer Service Key Principles</p>
+<p>Employers have indicated that there are several key principles to follow when handling customers to ensure that you are providing a positive customer service experience.</p>
+<p id="N10697" lang="">Truly exceptional customer service involves surprising and delighting the customer by exceeding his or her expectations. Good customer service includes the following key elements:</p>
+<ul lang="">
+<li lang="">Effective listening.</li>
+<li lang="">Taking ownership of the situation.</li>
+<li lang="">Apologizing when appropriate.</li>
+<li lang="">Remaining courteous and professional in all situations.</li>
+<li lang="">Handling situations in a timely manner.</li>
+<li lang="">Ensuring customers’ issues are resolved.</li>
+<li lang="">Checking back with customers to ensure the problem was resolved to their satisfaction.</li>
+</ul>
+<p id="N106B2" lang="">As a technician, depending on where you work, you will find that sometimes your customers are your company’s clients, and sometimes your customers are other employees at the company you work for. Whether they work for the same company that you do, are clients for your company, or are private individuals relying on your company, the same principles of customer service apply.</p>
+<p>我們需要意識到的第一件事是，在信息技術（IT）領域中的工作正在在客戶服務領域中。 IT領域以其自己的方式是獨特的，但它受客戶服務驅動。雖然通常使用專業商務對話的標準，但是技術人員具有“高級專業知識”所不具備的獨特之處，而高級專業人士可能不具備。例如，您要修理計算機的人可能是您公司的高級經理，但他們可能不知道如何修理計算機。然後，您必須保持冷靜，並在回應客戶需求時保持冷靜，並在自己的知識和程序中保持權威。對於新技術人員而言，這可能很困難。記住，永遠要仁慈和耐心：客戶需要您的幫助！</p>
+<p>協助圖書館顧客的圖書管理員的照片在循環服務台。館員向顧客顯示她的計算機屏幕，並向顧客指出相關信息。<br/>照片由曼徹斯特市圖書館根據CC-BY-SA許可使用。<br/>客戶服務關鍵原則<br/>雇主表示，在處理客戶時要遵循幾個關鍵原則，以確保您提供積極的客戶服務體驗。</p>
+<p>真正出色的客戶服務涉及超出客戶期望的驚喜和喜悅。良好的客戶服務包括以下關鍵要素：</p>
+<p>有效聆聽。<br/>掌握情況。<br/>適當的時候道歉。<br/>在任何情況下都保持禮貌和專業。<br/>及時處理情況。<br/>確保解決客戶的問題。<br/>與客戶核對，以確保問題得到滿意的解決。<br/>作為技術人員，根據您的工作地點，您會發現有時您的客戶是您公司的客戶，有時您的客戶是您所在公司的其他員工。無論他們與您在同一家公司工作，是您公司的客戶，還是依靠您公司的私人人士，都適用相同的客戶服務原則。</p>
+<h2>P.31</h2>
+<p id="N10688" lang="">This principle is one of the most important elements in the ability of an employee to deliver outstanding customer service. Effective listening involves paying careful attention to what the customer is saying and watching the customer’s body language (if the encounter is in person) to detect the nonverbal cues that give clues as to what the customer is thinking and feeling.</p>
+<div class="imagewrap"><span class="image"><img alt="Photograph of a five people meeting at a round table. A man is speaking and the    other four participants are facing the man and looking at him intently." class="popimg" id="_i_0" onclick="loadImageFromPage(this);" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH03/webcontent/PCH03/image2.jpeg" title="Photograph of a five people meeting at a round table. A man is speaking and the    other four participants are facing the man and looking at him intently."/></span><span class="caption" lang="">Listening. Photo used under CC-BY-NC-ND license from<span> </span><a href="https://www.flickr.com/photos/cabinetoffice/6684174833/in/photolist-bbE9iF-aSnP2t-aSnPmv-goanm-fBHdY9-88e38W-aw3PTS-aw17LM-aw17Bn-aw16A4-aw16oP-aw3P93-aw19En-aw17HK-aw1932-aw3MSq-aw3MFG-aw16rR-aw16ZM-aw3LXL-bbE7tX-88aRs2-88e5WW-99pSBf-88aShR-8csGVq-88ewoj-88evEm-88eyaE-88aNfT-88e4vU-88bgYT-88euvd-88aMcn-88e4mu-88e4L9-88aP4R-ayWBXW-88e2nG-88aSn2-88aLrT-99mKqp-7RhBfM-6uQMCX-ehZWW2-dKGinD-9wN5Bz-kCADyW-bihZUV-6xRMaz" id="_i_1" lang="" target="_blank">Cabinet</a><a href="https://www.flickr.com/photos/cabinetoffice/6684174833/in/photolist-bbE9iF-aSnP2t-aSnPmv-goanm-fBHdY9-88e38W-aw3PTS-aw17LM-aw17Bn-aw16A4-aw16oP-aw3P93-aw19En-aw17HK-aw1932-aw3MSq-aw3MFG-aw16rR-aw16ZM-aw3LXL-bbE7tX-88aRs2-88e5WW-99pSBf-88aShR-8csGVq-88ewoj-88evEm-88eyaE-88aNfT-88e4vU-88bgYT-88euvd-88aMcn-88e4mu-88e4L9-88aP4R-ayWBXW-88e2nG-88aSn2-88aLrT-99mKqp-7RhBfM-6uQMCX-ehZWW2-dKGinD-9wN5Bz-kCADyW-bihZUV-6xRMaz" id="_i_2" lang="" target="_blank">Office</a>.</span></div>
+<p id="N1069B" lang="">An effective listener is able to ask clarifying questions to help define the situation. At the end of the exchange, the employee should be able to clearly restate what the real problem is and what the customer is asking the company to do in response. The example below illustrates effective listening skills.</p>
+<p>該原則是員工提供出色客戶服務能力中最重要的要素之一。 有效的聆聽包括認真注意客戶在說什麼，並觀察客戶的肢體語言（如果是親自遇到的話），以發現非語言線索，從而提供有關客戶在想什麼和感覺的線索。</p>
+<p>見面在圓桌上的五個人的照片。 一個男人在說話，其他四個參與者面對著這個男人，專心地看著他。<br/>聽著 在CabinetOffice的CC-BY-NC-ND許可下使用的照片。<br/>有效的傾聽者能夠提出明確的問題，以幫助確定情況。 在交換結束時，員工應該能夠清楚地說明真正的問題是什麼，以及客戶要求公司做些什麼作為回應。 下面的示例說明了有效的聆聽技巧。</p>
+<h2>P.32</h2>
+<p id="N10682" lang="">Customers expect that an employee will take ownership of a situation. Taking ownership means that the employee takes responsibility for the situation and reassures the customer that the employee will take action. The employee should follow through and follow up afterwards to make sure the situation was resolved to the customer’s satisfaction. The employee should also promise to keep the customer informed as to what is happening along the way. An employee who is truly taking ownership of a situation is in regular contact with the customer, is continually trying to resolve the problem, and strives to keep the customer in the information loop.</p>
+<p lang=""><strong>Apologizing When Appropriate</strong></p>
+<div class="section" id="N10685">
+<div class="sectionContain">
+<p id="N1068C" lang="">Another effective customer service principle is to apologize when it is appropriate. There are two types of apologies. One type is used when the employee is taking ownership of a problem and apologizing for something that his company did or did not do:</p>
+<ul lang="">
+<li lang="">"I am sorry that I did not call you back yesterday to follow up."</li>
+<li lang="">"I am sorry that our company did not ship the product that you ordered."</li>
+</ul>
+<p id="N10698" lang="">It is always appropriate to apologize for errors that your company has made and to try to resolve them to the best of your ability. It is especially important to apologize to a customer who has become angry or frustrated about the situation.</p>
+<p id="N1069B" lang="">In some cases, the customer is angry about a situation that is really not the company’s fault, and that may not be something that the company can resolve at that point in time. In these situations, it may be appropriate to offer kind and sympathetic words that sound somewhat like an apology in order to defuse the situation. Examples of this might include:</p>
+<ul lang="">
+<li lang="">"I am so sorry that you are frustrated."</li>
+<li lang="">"I am sorry that happened to you."</li>
+</ul>
+<p>客戶期望員工將擁有情況的所有權。擁有所有權意味著員工對情況負責，並向客戶保證員工將採取行動。員工應跟進並隨後跟進，以確保情況得到解決，以使客戶滿意。員工還應承諾使客戶了解沿途情況。真正掌握情況所有權的員工與客戶保持定期聯繫，正在不斷嘗試解決問題，並努力使客戶保持信息循環。</p>
+<p>適當道歉<br/>另一個有效的客戶服務原則是在適當的時候道歉。道歉有兩種類型。當員工對某個問題承擔所有權並為公司所做或未做的事情道歉時，使用一種類型：</p>
+<p>“很抱歉昨天我沒有給您回電話以跟進。”<br/>“對不起，我們公司沒有發貨您訂購的產品。”<br/>對公司所犯的錯誤深表歉意，並儘力解決這些錯誤。向對這種情況感到生氣或沮喪的客戶道歉尤其重要。</p>
+<p>在某些情況下，客戶會對這種情況感到生氣，這實際上不是公司的錯，而這可能不是公司當時可以解決的問題。在這種情況下，為了緩解這種情況，可能應該提供聽起來像道歉的友善和同情的詞。例如：</p>
+<p>“對不起，您感到沮喪。”<br/>“對不起，這件事發生在你身上。”</p>
+</div>
+</div>
+<div id="gtx-anchor" style="position: absolute; visibility: hidden; left: 8px; top: 178.375px; width: 183.141px; height: 15px;"></div>
+<div aria-describedby="bubble-3" class="jfk-bubble gtx-bubble" role="alertdialog" style="visibility: visible; left: 85px; top: 203px; opacity: 1;">
+<div class="jfk-bubble-content-id" id="bubble-3">
+<div id="gtx-host" style="min-width: 200px; max-width: 400px;"></div>
+</div>
+<div aria-label="Close" class="jfk-bubble-closebtn-id jfk-bubble-closebtn" role="button" tabindex="0"></div>
+<div class="jfk-bubble-arrow-id jfk-bubble-arrow jfk-bubble-arrowup" style="left: 91.5px;">
+<div class="jfk-bubble-arrowimplbefore"></div>
+<div class="jfk-bubble-arrowimplafter"></div>
+</div>
+</div>
+<h2>P.33</h2>
+<p id="N1068A" lang="">An employee providing customer service must learn to remain courteous in all situations, regardless of how the customer behaves.</p>
+<p id="N1068D" lang="">The ability to defuse angry customers and handle difficult situations is a key element in providing effective customer service. An important strategy is to let the customer know what you are doing to solve the problem. Also, the ability to communicate on the same level as the customer and understand the audience is essential. Communicating on the same level as the customer means making sure to ask clarifying questions, repeating the information to ensure that you completely understand the issue and making sure the customer knows that you understand and will deal with the problem. It does not mean matching the customer’s behavior, particularly if the customer is angry or frustrated.</p>
+<div class="imagewrap"><span class="image"><img alt="Photograph of woman dressed professionally and sitting at a desk with a    computer. She is wearing a headset with microphone." class="popimg" id="_i_0" onclick="loadImageFromPage(this);" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH03/webcontent/PCH03/image4.jpeg" title="Photograph of woman dressed professionally and sitting at a desk with a    computer. She is wearing a headset with microphone."/></span><span class="caption" lang="">Customer Service. Photo used under CC-BY license from<span> </span><a href="https://www.flickr.com/photos/seattlemunicipalarchives/3182935316" id="_i_1" lang="" target="_blank">Seattle</a><a href="https://www.flickr.com/photos/seattlemunicipalarchives/3182935316" id="_i_2" lang="" target="_blank">Municipal Archives</a>.</span></div>
+<p id="N106A0" lang="">What are courteous behaviors?</p>
+<p id="N106A3" lang="">It is extremely important to maintain good eye contact, a moderate tone of voice, and positive body language during interactions with customers. Courteous behaviors could include a warm or sympathetic smile; an offer to take the customer to a more private location for further discussions; an offer of a tissue in the event of tears; an offer to call a family member if the customer appears extremely distressed, or an offer to give the customer a bit of privacy to pull himself together a bit more before resuming discussion about the problem.</p>
+<p id="N106A6" lang="">Sometimes companies lose business because their employees do not demonstrate courteous behavior. They can quickly lose valued customers if company employees are rude or unhelpful. Employing proper phone etiquette is critically important. It is important to mute the telephone whenever you have to discuss a situation with a coworker. When chatting with a customer, use small talk only when appropriate and only about harmless topics such as the weather. If you must place someone on hold, check with the person frequently.</p>
+<ul lang="">
+<li lang="">"This will take a bit longer than I thought, would you like to continue to hold or may I call you back?"</li>
+<li lang="">"Is there a good number where I can reach you when I have the answer?"</li>
+</ul>
+<p id="N106B2" lang="">Expectation management is crucial: always set expectations and meet those expectations. Do<span> </span><em class="bold" lang="">not<span> </span></em>promise something you cannot deliver. As you work through the problem, maintain a positive attitude and tone of voice; you will get more referrals and business if you remain likeable. Remember: the customer isn’t the problem, the customer is the one<span> </span><em class="bold" lang="">with<span> </span></em>the problem. So, don’t argue with the customer; just solve the problem. Also, don’t minimize the customer’s issues: to the customer, it is a horrible, tragic, big problem that they need you to fix. Never blame the customer for the problem or be judgmental toward the customer. Saying “If you didn’t go to that website, you wouldn’t have this problem” isn’t helpful, it is just insulting. Also, your mobile phone can wait while you are interacting with a customer. Give the customer your full attention and avoid distractions.</p>
+<p>提供客戶服務的員工必須學會在所有情況下都保持禮貌，無論客戶的行為如何。</p>
+<p>化解生氣的客戶並處理困難情況的能力是提供有效客戶服務的關鍵要素。一個重要的策略是讓客戶知道您正在採取什麼措施來解決問題。此外，與客戶在同一水平上進行交流並了解受眾的能力也至關重要。與客戶在同一級別上進行通信意味著確保提出明確的問題，重複信息以確保您完全理解問題，並確保客戶知道您已理解並會解決問題。這並不意味著匹配客戶的行為，尤其是在客戶生氣或沮喪的情況下。</p>
+<p>專業地打扮和坐在有計算機的一張書桌的婦女的照片。她戴著帶麥克風的耳機。<br/>客戶服務。西雅圖市政檔案館的CC-BY許可使用的照片。<br/>什麼是有禮貌的行為？</p>
+<p>與客戶互動時，保持良好的眼神交流，適度的語氣和積極的肢體語言極為重要。有禮貌的舉止可能包括溫暖或富有同情心的微笑。提供將客戶帶到更私密的位置進行進一步討論的提議；在流淚的情況下提供紙巾；如果客戶看起來非常苦惱，可以打電話給家庭成員，或者提供給客戶一些私密性，以便在恢復有關該問題的討論之前將自己團結起來。</p>
+<p>有時，公司因員工沒有表現出禮貌而失去業務。如果公司員工無禮或無益，他們可能會迅速失去有價值的客戶。正確使用電話禮節至關重要。每當您需要與同事討論情況時，都必須使電話靜音。與客戶聊天時，僅在適當的時候進行閒聊，並且僅談論天氣等無害的話題。如果必須擱置某人，請經常與該人核對。</p>
+<p>“這將比我想像的要花費更長的時間，您想繼續保留還是可以給您回電？”<br/>“找到答案後，能找到您的電話嗎？”<br/>期望管理至關重要：始終設定期望並滿足這些期望。不要承諾無法交付的東西。解決問題時，請保持積極的態度和語氣；如果您仍然喜歡，您將獲得更多的推薦和生意。請記住：客戶不是問題，客戶是有問題的人。因此，請勿與客戶爭論；只是解決問題。另外，不要最小化客戶的問題：對客戶來說，這是一個可怕的，悲劇性的大問題，需要他們解決。切勿將問題歸咎於客戶或對客戶作出判斷。說“如果您不訪問該網站，就不會遇到這個問題”，這無濟於事，只是侮辱。同樣，您的手機可以在與客戶互動時等待。給客戶充分的關注，避免分心。</p>
+<h2>P.34</h2>
+<p id="N1068A" lang="">It is imperative to follow up with the customer after problem resolution and make sure that everything was handled to the customer’s satisfaction, if at all possible.</p>
+<p id="N1068D" lang="">What are the limits on ensuring customer issues are resolved?</p>
+<p id="N10690" lang="">Sometimes it is impossible to resolve the situation to a customer’s complete satisfaction. A computer that was involved in a power spike might be a total loss and may not be able to be repaired. A computer virus may infect and destroy sensitive data on a key project. Sometimes valuable items are broken or damaged badly in a shipment. The customer may have special sentimental attachment to certain items. Or, data that was lost because of a system failure may not have been stored anywhere else. Lost or damaged items may not be replaceable, or a new item may not have the same sentimental meaning as the one that was lost or damaged. Lost data may be very difficult to reproduce. These types of situations are just part of life.</p>
+<p id="N10693" lang="">If the situation cannot be resolved to the customer’s satisfaction, it is important to apologize for that and to express sympathy and empathy for the way that the customer is feeling at that point in time. Some examples might be:</p>
+<ul lang="">
+<li lang="">"I know how much you loved that car! I am so sorry it was totaled in that accident. I am just glad that you were not hurt."</li>
+<li lang="">"I am so sorry that your favorite vase was broken during the move. I understand that it was your mother’s, and is not something that you can replace. We feel really bad about that."</li>
+<li lang="">"I know how disappointing it is that you’ve lost photos on your hard drive due to the lightning storm. I’m sorry that you’re going through this now. I know how much those photos must have meant to you; my photos of the trip I took with my family this summer mean more to me than I can say."</li>
+</ul>
+<p id="N106A2" lang="">Always follow up with customers after repairs to verify that they are satisfied. This is a good approach for two reasons. First, the customer may be experiencing problems and would appreciate your indication that you are available to help rectify the problem. Second, the customer may have more business or a referral for you, because they were so happy with your performance. This is good customer service and also good business sense!</p>
+<p>解決問題後，必須與客戶保持聯繫，並確保一切可能的事情都得到客戶的滿意處理。</p>
+<p>確保解決客戶問題有哪些限制？</p>
+<p>有時無法解決這種情況以使客戶完全滿意。涉及電源峰值的計算機可能會造成全部損失，並且可能無法修復。計算機病毒可能感染並破壞關鍵項目上的敏感數據。有時，裝運中的貴重物品嚴重損壞或損壞。客戶可能對某些物品有特殊的情感依戀。或者，由於系統故障而丟失的數據可能沒有存儲在其他任何地方。丟失或損壞的物品可能無法更換，或者一件新物品可能與丟失或損壞的物品具有不同的情感含義。丟失的數據可能很難重現。這些情況只是生活的一部分。</p>
+<p>如果無法解決這種情況以使客戶滿意，則必須為此道歉並表達對客戶當時感覺的同情和同情。一些示例可能是：</p>
+<p>“我知道你對那輛車有多愛！我很抱歉那次事故總共造成了我。我很高興你沒有受傷。”<br/>“很抱歉，您最喜歡的花瓶在搬家過程中被弄壞了。我知道那是您母親的花瓶，不是您可以更換的東西。對此我們感到非常遺憾。”<br/>“我知道您因雷雨而丟失了硬盤驅動器上的照片，這真令人失望。對於您現在正在經歷此事，我們深感抱歉。我知道這些照片一定對您意味著什麼；我的照片今年夏天我與家人的旅行中，對我來說意義重大，莫過於我所能說的。”<br/>維修後請始終與客戶保持聯繫，以確保他們滿意。這是一個好方法，有兩個原因。首先，客戶可能遇到問題，希望您能幫助您解決問題。其次，客戶可能會對您有更多的業務或推薦，因為他們對您的表現非常滿意。這是良好的客戶服務，也具有良好的商業意識！</p>
+<h2>P.35</h2>
+<p id="N106A0" lang="">Customers often entrust their confidential and personal data to you in order to have their devices repaired. Above all, respect the customers and their property. There are fundamental rules a technician should follow when handling a customer’s property:</p>
+<ul lang="">
+<li lang="">Do not use a customer’s equipment for personal use. You may have been tasked with setting up email on a customer’s smartphone. That doesn’t give you the right to make personal calls on their phone while it is in your possession.</li>
+<li lang="">Do not look through a device’s storage unless you need to in order to perform the job requested. If a customer asks you to back up all of his documents, it may be necessary to open the documents folder on the hard disk to copy those files over. This would be acceptable, but if he asked for documents and you are browsing through his pictures folder, this is unacceptable and outside the scope of the required job.</li>
+<li lang="">Ensure reasonable testing of a device. If you were testing a printer, you should print the minimal amount to verify functionality. There is no need to print 100 pages to verify that a printer works when a single page will suffice. Furthermore, ensure that the content printed is not offensive or personal in nature.</li>
+<li lang="">Return all settings to the customer’s preferences. When you work on someone’s machine or device, return the device with all settings reverted to the customer’s preferences. If the monitor resolution must be changed to accomplish the repair task, ensure the customer’s preferred resolution is restored when the job is complete.</li>
+</ul>
+<p id="N106B2" lang="">Above all, respect customers and their property. Remember that you are a customer too; think of how you would like to be treated, and ensure that you treat your customers in this manner.</p>
+<p>客戶通常將其機密和個人數據託付給您，以便對其設備進行維修。首先，要尊重客戶及其財產。技術人員在處理客戶財產時應遵循的基本規則：</p>
+<p>請勿將客戶的設備用於個人用途。您可能被要求在客戶的智能手機上設置電子郵件。這並不意味著您擁有在您擁有的電話上通過電話撥打私人電話的權利。<br/>除非需要執行請求的工作，否則請勿瀏覽設備的存儲空間。如果客戶要求您備份所有文檔，則可能有必要打開硬盤上的documents文件夾以復制這些文件。這是可以接受的，但是如果他要文件，而您正在瀏覽他的圖片文件夾，則這是不可接受的，超出了所需工作的範圍。<br/>確保合理測試設備。如果要測試打印機，則應打印最少的數量以驗證功能。當單頁就足夠時，無需打印100頁即可驗證打印機是否工作。此外，請確保所打印的內容不具有冒犯性或個人性質。<br/>將所有設置恢復為客戶的偏好設置。當您在某人的機器或設備上工作時，請返回設備並將所有設置恢復為客戶的首選項。如果必須更改顯示器分辨率才能完成維修任務，請確保在作業完成後恢復客戶的首選分辨率。<br/>首先，尊重客戶及其財產。請記住，您也是客戶。考慮如何對待您，並確保您以這種方式對待客戶。</p>
+<h2>P.36</h2>
+<p id="N10694" lang="">Truly exceptional customer service involves surprising and delighting the customer by exceeding his or her expectations.</p>
+<p id="N10697" lang="">The following strategies are effective with all types of customer behavior:</p>
+<ul lang="">
+<li lang="">Warm welcome and friendly smile.</li>
+<li lang="">Effective listening.</li>
+<li lang="">Empathy.</li>
+<li lang="">Follow-through and follow-up.</li>
+</ul>
+<p id="N106A9" lang="">When dealing with customer service, we always want to exceed our customers’ expectations. One key step to accomplishing this is to set and meet the timeline you provide the customer. You need to tell the customer how long the repairs will take, and also if it is worth the cost of the repair. If a customer calls you for a broken laptop screen replacement on a four-year-old laptop, it may be more cost effective for the customer to simply buy a new laptop. (NOTE: The rule of thumb for laptop repairs is that if it costs 50 percent or more of the cost of a new laptop, replacement is suggested.)</p>
+<p id="N106AC" lang="">When options are available, present them logically with the estimated cost, time to repair, and length of future service of the workstation. When providing services to the client, always provide documentation on the services you provided.</p>
+<p>真正出色的客戶服務涉及超出客戶期望的驚喜和喜悅。</p>
+<p>以下策略對所有類型的客戶行為均有效：</p>
+<p>熱情的歡迎和友好的微笑。<br/>有效聆聽。<br/>同情。<br/>跟進和跟進。<br/>處理客戶服務時，我們始終希望超出客戶的期望。完成此任務的關鍵一步是設置並滿足您為客戶提供的時間表。您需要告訴客戶維修需要多長時間，以及是否值得花費維修費用。如果客戶要求您更換一台使用了四年的舊筆記本電腦的筆記本電腦屏幕壞了，那麼客戶只需購買一台新筆記本電腦可能更具成本效益。 （注意：筆記本電腦維修的經驗法則是，如果筆記本電腦維修費用佔新筆記本電腦成本的50％或以上，則建議更換。）</p>
+<p>如果有可用的選件，請在邏輯上將其與估計的成本，維修時間和工作站的未來服務時間一起提供。向客戶提供服務時，請始終提供有關所提供服務的文檔。</p>
+<h1>Hw3</h1>
+<h2>1.</h2>
+<br/>Character Input<span> </span><img class="chili" src="https://www.practicepython.org/assets/img/chili-liz-20x20.png"/>
+<div><i>input strings types int</i></div>
+<p>Calibrating the exercises to the audience is going to be a challenging task, so I ask you to bear with me if the exercises are too easy or too hard. Every week there will be a poll you can click on to discuss whether the exercise is too easy or too hard and hopefully in a few weeks, I’ll get the level right. Let’s get to it! I will start with the exercise and include a discussion later, in case you want the extra challenge.</p>
+<br/>Exercise 1 (and<span> </span><a href="https://www.practicepython.org/solution/2014/02/05/01-character-input-solutions.html">Solution</a>)
+<p>Create a program that asks the user to enter their name and their age. Print out a message addressed to them that tells them the year that they will turn 100 years old.</p>
+<p>Extras:</p>
+<ol>
+<li>Add on to the previous program by asking the user for another number and printing out that many copies of the previous message. (<em>Hint:<span> </span><a href="http://www.mathsisfun.com/operation-order-pemdas.html">order of operations</a><span> </span>exists in Python</em>)</li>
+<li>Print out that many copies of the previous message on separate lines. (<em>Hint: the string<span> </span><code class="highlighter-rouge">"\n</code><span> </span>is the same as pressing the ENTER button</em>)</li>
+</ol>
+<p>discussion</p>
+<p>Concepts for this week:</p>
+<ul>
+<li>Getting user input</li>
+<li>Manipulating strings (a few ways)</li>
+</ul>
+<p></p>
+<p>User input in Python</p>
+<p>To get user input in Python (3), the command you use is<span> </span><a href="http://docs.python.org/3.3/library/functions.html?highlight=input#input"><code class="highlighter-rouge">input()</code></a>. Store the result in a variable, and use it to your heart’s content. Remember that the result you get from the user will be a string, even if they enter a number.</p>
+<p>For example,</p>
+<figure class="highlight">
+<pre><code class="language-python" data-lang="python"><span class="n">name</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">"Give me your name: "</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s">"Your name is "</span> <span class="o">+</span> <span class="n">name</span><span class="p">)</span></code></pre>
+</figure>
+<p>What this will print in the terminal (or the shell, whatever you are running Python in) will be:</p>
+<figure class="highlight">
+<pre><code class="language-python" data-lang="python"><span class="o">&gt;&gt;&gt;</span> <span class="n">Give</span> <span class="n">me</span> <span class="n">your</span> <span class="n">name</span><span class="p">:</span> <span class="n">Michele</span>
+<span class="n">Your</span> <span class="n">name</span> <span class="ow">is</span> <span class="n">Michele</span></code></pre>
+</figure>
+<p>What happens at the end of<span> </span><code class="highlighter-rouge">input()</code><span> </span>is that it waits for the user to type something and press ENTER. Only after the user presses ENTER does the program continue.</p>
+<p>Manipulating strings (a few ways)</p>
+<p>What you get from the<span> </span><code class="highlighter-rouge">input()</code><span> </span>function is a string. What can you do with it?</p>
+<p>First: Make the string into a number. Let’s say you are 100% positive that the user entered a number. You can turn the string into an integer with the function<span> </span><a href="http://docs.python.org/3.3/library/functions.html#int"><code class="highlighter-rouge">int()</code></a>. (In a later exercise or two or three there will be questions about what to do when the user does NOT enter a number and you try to do this; for now don’t worry about that problem). Here is what this looks like:</p>
+<figure class="highlight">
+<pre><code class="language-python" data-lang="python"><span class="n">age</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">"Enter your age: "</span><span class="p">)</span>
+<span class="n">age</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">age</span><span class="p">)</span></code></pre>
+</figure>
+<p>(or, if you want to be more compact with your code)</p>
+<figure class="highlight">
+<pre><code class="language-python" data-lang="python"><span class="n">age</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">"Enter your age: "</span><span class="p">))</span>
+	</code></pre>
+</figure>
+<p>In both cases,<span> </span><code class="highlighter-rouge">age</code><span> </span>will hold a variable that is an integer, and now you can do math with it.</p>
+<p>(Note, you can also turn integers into strings exactly in the opposite way, using the<span> </span><a href="http://docs.python.org/3.3/library/functions.html#str"><code class="highlighter-rouge">str()</code></a><span> </span>function)</p>
+<p>Second: Do math with strings. What do I mean by that? I mean, if I want to combine (<strong>concatenate</strong><span> </span>is the computer science word for this) strings, all I need to do is add them:</p>
+<figure class="highlight">
+<pre><code class="language-python" data-lang="python">	
+<span class="k">print</span><span class="p">(</span><span class="s">"Were"</span> <span class="o">+</span> <span class="s">"wolf"</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s">"Door"</span> <span class="o">+</span> <span class="s">"man"</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s">"4"</span> <span class="o">+</span> <span class="s">"chan"</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span> <span class="o">+</span> <span class="s">"chan"</span><span class="p">)</span></code></pre>
+</figure>
+<p>The same works for multiplication:</p>
+<figure class="highlight">
+<pre><code class="language-python" data-lang="python"><span class="k">print</span><span class="p">(</span><span class="mi">4</span> <span class="o">*</span> <span class="s">"test"</span><span class="p">)</span></code></pre>
+</figure>
+<p>but division and subtraction do not work like this. In terms of multiplication, the idea of multiplyling two strings together is not well-defined. What does it mean to multiply two strings in the first place? However, it makes sense in a way to specify multiplying a string by a number - just repeat that string that number of times. Try this in your own program with all the arithmetic operations with numbers and strings - the best way to get a feel for what works and what doesn’t is to try it!</p>
+<p>happy coding</p>
+<p>字符輸入<br/>輸入字符串類型int<br/>向觀眾校準練習將是一項艱鉅的任務，因此，我請您忍受練習是否太容易或太難。每週都會進行一次民意測驗，您可以單擊以討論該練習是太容易還是太難了，希望在幾週後，我會把水平調到正確。讓我們開始吧！如果您需要額外的挑戰，我將從練習開始，並在以後進行討論。</p>
+<p>練習1（和解決方案）<br/>創建一個程序，要求用戶輸入他們的姓名和年齡。打印給他們的消息，告訴他們他們將滿100歲的年份。</p>
+<p>附加功能：</p>
+<p>通過詢問用戶另一個號碼並打印出先前消息的許多副本來添加到先前的程序中。 （提示：Python中存在操作順序）<br/>在單獨的行上打印出先前消息的許多副本。 （提示：字符串“ \ n與按ENTER按鈕相同）<br/>討論區<br/>本週的概念：</p>
+<p>獲取用戶輸入<br/>處理字符串（幾種方法）<br/>使用Python的用戶輸入<br/>為了在Python（3）中獲得用戶輸入，您使用的命令是input（）。將結果存儲在變量中，並將其用於您的內心。請記住，即使用戶輸入數字，您從用戶那裡得到的結果也將是字符串。</p>
+<p>例如，</p>
+<p>名稱=輸入（“給我您的名字：”）<br/>print（“您的名字是” +名字）<br/>這將在終端（或外殼，無論您在其中運行Python的什麼）中顯示的內容是：</p>
+<p>&gt;&gt;&gt;給我你的名字：米歇爾<br/>你的名字叫米歇爾<br/>在input（）的末尾發生的事情是它等待用戶鍵入某些內容並按Enter。僅在用戶按下ENTER之後，程序才會繼續。</p>
+<p>處理字符串（幾種方法）<br/>從input（）函數得到的是一個字符串。你能做什麼呢？</p>
+<p>第一：將字符串變成數字。假設您100％肯定用戶輸入了數字。您可以使用函數int（）將字符串轉換為整數。 （在以後的一兩三個練習中，當用戶不輸入數字而您嘗試這樣做時，將會出現關於如何處理的問題；現在不必擔心該問題）。看起來像這樣：</p>
+<p>年齡=輸入（“輸入您的年齡：”）<br/>年齡= int（年齡）<br/>（或者，如果您想使代碼更緊湊）</p>
+<p>age = int（input（“輸入您的年齡：”））</p>
+<p>在這兩種情況下，age都將保留一個整數變量，現在您可以使用它進行數學運算。</p>
+<p>（注意，您也可以使用str（）函數以相反的方式將整數轉換為字符串）</p>
+<p>第二：對字符串進行數學運算。那是什麼意思我的意思是，如果我想組合（連接起來是計算機科學這個詞）字符串，我要做的就是添加它們：</p>
+<p><br/>打印（“是” +“狼”）<br/>打印（“門” +“人”）<br/>打印（“ 4” +“ chan”）<br/>打印（str（4）+“ chan”）<br/>乘法的工作原理相同：</p>
+<p>打印（4 *“測試”）<br/>但是除法和減法不是這樣的。就乘法而言，將兩個字符串相乘的想法尚不明確。首先將兩個字符串相乘是什麼意思？但是，以某種方式指定將字符串乘以數字是有意義的-只需將該字符串重複該次數即可。在您自己的程序中嘗試使用帶有數字和字符串的所有算術運算，嘗試一下什麼是可行的，無效的最佳方法！</p>
+<p>祝您編碼愉快！</p>
+<h2>2.</h2>
+<div><i>input if types int equality comparison numbers mod</i></div>
+<p>Again, the exercise comes first (with a few extras if you want the extra challenge or want to spend more time), followed by a discussion. Enjoy!</p>
+<p></p>
+<p>Exercise 2 (and Solution)</p>
+<p>Ask the user for a number. Depending on whether the number is even or odd, print out an appropriate message to the user. Hint: how does an even / odd number react differently when divided by 2?</p>
+<p>Extras:</p>
+<ol>
+<li>If the number is a multiple of 4, print out a different message.</li>
+<li>Ask the user for two numbers: one number to check (call it<span> </span><code class="highlighter-rouge">num</code>) and one number to divide by (<code class="highlighter-rouge">check</code>). If<span> </span><code class="highlighter-rouge">check</code><span> </span>divides evenly into<span> </span><code class="highlighter-rouge">num</code>, tell that to the user. If not, print a different appropriate message.</li>
+</ol>
+<p>Discussion</p>
+<p>Concepts for this week:</p>
+<ul>
+<li>Modular arithmetic (the modulus operator)</li>
+<li>Conditionals (if statements)</li>
+<li>Checking equality</li>
+</ul>
+<p>Modular arithmetic (the modulus operator)</p>
+<p>We have been doing arithmetic (addition, subtraction, multiplication, division) since elementary school, and often it is useful for us to find not the answer to a division problem but the remainder when we do a division operation. This operation is called the “modulus operation.” For example, when I divide 5 by 3, the remainder is 2, and the sentence reads like this: “5 modulo 3 is 2.”</p>
+<p>In the Python shell:</p>
+<figure class="highlight">
+<pre><code class="language-python" data-lang="python">  
+<span class="o">&gt;&gt;&gt;</span> <span class="mi">5</span> <span class="o">%</span> <span class="mi">3</span>
+<span class="mi">2</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="mi">6</span> <span class="o">%</span> <span class="mi">3</span>
+<span class="mi">0</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="mi">7</span> <span class="o">%</span> <span class="mi">3</span>
+<span class="mi">1</span></code></pre>
+</figure>
+<p>The<span> </span><code class="highlighter-rouge">%</code><span> </span>sign is exactly the modulus operator.</p>
+<p>Conditionals</p>
+<p>When a computer (or a program) needs to decide something, it checks whether some condition is satisfied, which is where the term<span> </span><strong>conditional</strong><span> </span>comes from. Conditionals are a fancy way of saying “if statements”. If Michele was born in New York, she has an American passport. That statement is a conditional (if statement) that in this case is true. In Python this works the same way:</p>
+<figure class="highlight">
+<pre><code class="language-python" data-lang="python">  
+<span class="k">if</span> <span class="n">age</span> <span class="o">&gt;</span> <span class="mi">17</span><span class="p">:</span> 
+  <span class="k">print</span><span class="p">(</span><span class="s">"can see a rated R movie"</span><span class="p">)</span>
+<span class="k">elif</span> <span class="n">age</span> <span class="o">&lt;</span> <span class="mi">17</span> <span class="ow">and</span> <span class="n">age</span> <span class="o">&gt;</span> <span class="mi">12</span><span class="p">:</span>
+  <span class="k">print</span><span class="p">(</span><span class="s">"can see a rated PG-13 movie"</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span> 
+  <span class="k">print</span><span class="p">(</span><span class="s">"can only see rated PG movies"</span><span class="p">)</span></code></pre>
+</figure>
+<p>When the program gets to the<span> </span><code class="highlighter-rouge">if</code><span> </span>statement, it will check the value of the variable called<span> </span><code class="highlighter-rouge">age</code><span> </span>against all of the conditions, in order, and will print something to the screen accordingly. Note that<span> </span><code class="highlighter-rouge">elif</code><span> </span>is a portmanteau of “else” and “if”. So if the variable<span> </span><code class="highlighter-rouge">age</code><span> </span>holds the value 15, the statement<span> </span><code class="highlighter-rouge">"can see a rated PG-13 movie"</code><span> </span>will be printed to the screen.</p>
+<p>Note how the statement<span> </span><code class="highlighter-rouge">elif age &lt; 17 and age &gt; 12</code><span> </span>has the statement<span> </span><code class="highlighter-rouge">and</code><span> </span>- you can use<span> </span><code class="highlighter-rouge">or</code><span> </span>and<span> </span><code class="highlighter-rouge">not</code><span> </span>in the same way. Understanding a bit about logic and how it works, or being able to rationally think about logic will help you get the conditions right - oh, and a lot of practice.</p>
+<p>Links about conditionals:</p>
+<ul>
+<li><a href="http://docs.python.org/3.3/tutorial/controlflow.html">The official Python documentation</a></li>
+<li><a href="http://www.pythonforbeginners.com/basics/python-if-elif-else-statement/">Python for beginners explains conditionals</a></li>
+</ul>
+<p>Checking for equality (and comparators in general)</p>
+<p>A fundamental thing you want to do with your program is check whether some number is equal to another. Say the user tells you how many questions they answered incorrectly on a practice exam, and depending on the number of correctly-answered questions, you can suggest a specific course of action. For integers, strings, floats, and many other variable types, this is done with a simple syntax:<span> </span><code class="highlighter-rouge">==</code>. To explicitly check inequality, use<span> </span><code class="highlighter-rouge">!=</code>.</p>
+<figure class="highlight">
+<pre><code class="language-python" data-lang="python">  
+<span class="k">if</span> <span class="n">a</span> <span class="o">==</span> <span class="mi">3</span><span class="p">:</span> 
+  <span class="k">print</span><span class="p">(</span><span class="s">"the variable has the value 3"</span><span class="p">)</span>
+<span class="k">elif</span> <span class="n">a</span> <span class="o">!=</span> <span class="mi">3</span><span class="p">:</span>
+  <span class="k">print</span><span class="p">(</span><span class="s">"the variable does not have the value 3"</span><span class="p">)</span></code></pre>
+</figure>
+<p>Notice how in this example, the condition is redundant. In the first condition we are checking whether the variable<span> </span><code class="highlighter-rouge">a</code><span> </span>has the value 3 and in the second, we are checking whether<span> </span><code class="highlighter-rouge">a</code><span> </span>does NOT have the value 3. However, if the first condition is not true (<code class="highlighter-rouge">a</code><span> </span>is in fact not 3), then the second condition is by definition true. So a more efficient way to write the above conditional is like this:</p>
+<figure class="highlight">
+<pre><code class="language-python" data-lang="python"><span class="k">if</span> <span class="n">a</span> <span class="o">==</span> <span class="mi">3</span><span class="p">:</span> 
+  <span class="k">print</span><span class="p">(</span><span class="s">"the variable has the value 3"</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+  <span class="k">print</span><span class="p">(</span><span class="s">"the variable does not have the value 3"</span><span class="p">)</span></code></pre>
+</figure>
+<p>The same equality / inequality comparisons work for strings.</p>
+<p>Links about equality and comparators:</p>
+<ul>
+<li><a href="http://docs.python.org/3.3/library/stdtypes.html?highlight=comparison#comparisons">The official Python documentation</a>
+<p></p>
+<p>輸入類型是否等於相等比較數mod<br/>再次，練習是第一位的（如果您需要額外的挑戰或想要花費更多的時間，還可以進行一些其他操作），然後進行討論。請享用！</p>
+<p></p>
+<p>練習2（和解決方案）</p>
+<p>詢問用戶一個數字。根據數字是偶數還是奇數，向用戶打印一條適當的消息。提示：偶數/奇數除以2時的反應如何？</p>
+<p>附加功能：</p>
+<p>如果數字是4的倍數，請打印出另一條消息。<br/>向用戶詢問兩個數字：一個數字要檢查（稱為num），另一個數字要除以（檢查）。如果檢查平均分為num，請告知用戶。如果不是，請打印其他適當的消息。<br/>討論區</p>
+<p>本週的概念：</p>
+<p>模塊化算術（模運算符）<br/>有條件的（如果語句）<br/>檢查平等<br/>模塊化算術（模運算符）</p>
+<p>從小學開始，我們就一直在進行算術運算（加，減，乘，除），這對於我們尋找除法問題不是答案，而是對除法運算的其餘部分有用。該操作稱為“模運算”。例如，當我將5除以3時，餘數為2，句子的內容如下：“ 5模3為2”。</p>
+<p>在Python Shell中：</p>
+<p><br/>&gt;&gt;&gt; 5％3<br/>2<br/>&gt;&gt;&gt; 6％3<br/>0<br/>&gt;&gt;&gt; 7％3<br/>1個<br/>％符號正好是模數運算符。</p>
+<p>有條件的</p>
+<p>當計算機（或程序）需要做出決定時，它會檢查是否滿足某些條件，這就是條件一詞的來源。條件語句是說“ if語句”的一種奇特的方式。如果米歇爾（Michele）出生於紐約，則她擁有美國護照。該語句是在這種情況下為真的條件（如果語句）。在Python中，這是相同的方式：</p>
+<p><br/>如果年齡&gt; 17：<br/> 打印（“可以看額定的R電影”）<br/>Elif年齡&lt;17歲和&gt; 12歲：<br/> 打印（“可以看到額定的PG-13電影”）<br/>其他：<br/> 打印（“只能看到額定的PG電影”）<br/>當程序進入if語句時，它將按所有條件依次檢查稱為age的變量的值，並將相應內容打印到屏幕上。注意，elif是“ else”和“ if”的組合。因此，如果變量age的值保持為15，則“可以看到額定的PG-13電影”語句將顯示在屏幕上。</p>
+<p>請注意elif age &lt;17和age&gt; 12語句如何具有語句--您可以以相同的方式使用or或不使用。了解一些有關邏輯及其原理的知識，或者能夠理性地思考邏輯，將幫助您找到合適的條件-哦，還有很多練習。</p>
+<p>有關條件的鏈接：</p>
+<p>官方Python文檔<br/>初學者使用Python解釋條件<br/>檢查是否相等（以及一般的比較器）</p>
+<p>您要對程序執行的基本操作是檢查某個數字是否等於另一個數字。假設用戶告訴您他們在實踐考試中有多少個答錯了的問題，並且根據正確回答的問題的數量，您可以提出具體的操作建議。對於整數，字符串，浮點數和許多其他變量類型，這是通過簡單的語法完成的：==。要顯式檢查不平等，請使用！=。</p>
+<p><br/>如果a == 3：<br/> print（“變量的值為3”）<br/>省略！= 3：<br/> print（“變量的值不為3”）<br/>請注意，在此示例中，條件是多餘的。在第一個條件中，我們正在檢查變量a是否具有值3，在第二個條件中，我們正在檢查a是否不具有值3。但是，如果第一個條件不為真（a實際上不是3），那麼根據定義，第二個條件為真。因此，編寫上述條件的更有效方法如下：</p>
+<p>如果a == 3：<br/> print（“變量的值為3”）<br/>其他：<br/> print（“變量的值不為3”）<br/>相同的相等/不相等比較適用於字符串。</p>
+<p>有關相等性和比較器的鏈接：</p>
+<p>官方Python文檔</p>
+</li>
+</ul><h2>3.</h2>
+<p>Exercise 3 (and Solution)</p>
+<p>Take a list, say for example this one:</p>
+<figure class="highlight">
+<pre><code class="language-python" data-lang="python">  <span class="n">a</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">13</span><span class="p">,</span> <span class="mi">21</span><span class="p">,</span> <span class="mi">34</span><span class="p">,</span> <span class="mi">55</span><span class="p">,</span> <span class="mi">89</span><span class="p">]</span></code></pre>
+</figure>
+<p>and write a program that prints out all the elements of the list that are less than 5.</p>
+<p>Extras:</p>
+<ol>
+<li>Instead of printing the elements one by one, make a new list that has all the elements less than 5 from this list in it and print out this new list.</li>
+<li>Write this in one line of Python.</li>
+<li>Ask the user for a number and return a list that contains only elements from the original list<span> </span><code class="highlighter-rouge">a</code><span> </span>that are smaller than that number given by the user.</li>
+</ol>
+<p>Discussion</p>
+<p>This week’s topics:</p>
+<ol>
+<li>Lists</li>
+<li>More conditionals (if statements)</li>
+</ol>
+<p>lists</p>
+<p>This week’s exercise hits on a topic critical for all types and styles of programming:<span> </span><strong>lists</strong>. Lists are basically an ordered way of grouping things (called<span> </span><strong>elements</strong>) - the cool thing about lists in Python is that you can have a list that contains objects of multiple types. Your list can mix between strings, integers, objects, other lists, what have you.</p>
+<p>The way to construct an empty list is just to do</p>
+<figure class="highlight">
+<pre><code class="language-python" data-lang="python"><span class="n">x</span> <span class="o">=</span> <span class="p">[]</span></code></pre>
+</figure>
+<p>And your variable<span> </span><code class="highlighter-rouge">x</code><span> </span>now holds an empty list. To add things to this list, just “append” them to the list. Like so:</p>
+<figure class="highlight">
+<pre><code class="language-python" data-lang="python"><span class="n">x</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">x</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span></code></pre>
+</figure>
+<p>Your list<span> </span><code class="highlighter-rouge">x</code><span> </span>now looks like<span> </span><code class="highlighter-rouge">[3]</code>.</p>
+<p>In Python, lists are also<span> </span><strong>iterables</strong>, which means you can loop through them with a<span> </span><strong>for loop</strong><span> </span>in a convenient way. (If you come from other languages like C++ or Java you are most likely used to using a counter to loop through indices of a list - in Python you can actually loop through the elements.) I will let the code speak for itself:</p>
+<figure class="highlight">
+<pre><code class="language-python" data-lang="python"><span class="n">my_list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="s">"Michele"</span><span class="p">,</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">]]</span>
+<span class="k">for</span> <span class="n">element</span> <span class="ow">in</span> <span class="n">my_list</span><span class="p">:</span>
+  <span class="k">print</span><span class="p">(</span><span class="n">element</span><span class="p">)</span></code></pre>
+</figure>
+<p>Will yield the result:</p>
+<figure class="highlight">
+<pre><code class="language-pycon" data-lang="pycon">1 
+3
+"Michele"
+[5, 6, 7]</code></pre>
+</figure>
+<p>There are many other properties of lists, but for the basic exercise all you should need is this for loop property. Future weeks will address other properties of lists.</p>
+<p>For more information about lists in Python, check out these resources:</p>
+<ul>
+<li><a href="http://docs.python.org/3.3/tutorial/datastructures.html">The official Python documentation on lists</a></li>
+<li><a href="http://www.tutorialspoint.com/python/python_lists.htm">Tutorialspoint on Python lists</a></li>
+<li><a href="http://effbot.org/zone/python-list.htm">Someone else’s blog post about lists</a></li>
+</ul>
+<p>More Conditionals</p>
+<p>The nice thing about conditionals is that they follow logical operations. They can also be used to test equality. Let’s do a small example. Let’s say I want to make a piece of code that converts from a numerical grade (1-100) to a letter grade (A, B, C, D, F). The code would look like this:</p>
+<figure class="highlight">
+<pre><code class="language-python" data-lang="python"><span class="n">grade</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">"Enter your grade: "</span><span class="p">)</span>
+<span class="k">if</span> <span class="n">grade</span> <span class="o">&gt;=</span> <span class="mi">90</span><span class="p">:</span>
+  <span class="k">print</span><span class="p">(</span><span class="s">"A"</span><span class="p">)</span>
+<span class="k">elif</span> <span class="n">grade</span> <span class="o">&gt;=</span> <span class="mi">80</span><span class="p">:</span>
+  <span class="k">print</span><span class="p">(</span><span class="s">"B"</span><span class="p">)</span>
+<span class="k">elif</span> <span class="n">grade</span> <span class="o">&gt;=</span> <span class="mi">70</span><span class="p">:</span>
+  <span class="k">print</span><span class="p">(</span><span class="s">"C"</span><span class="p">)</span>
+<span class="k">elif</span> <span class="n">grade</span> <span class="o">&gt;=</span> <span class="mi">65</span><span class="p">:</span>
+  <span class="k">print</span><span class="p">(</span><span class="s">"D"</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+  <span class="k">print</span><span class="p">(</span><span class="s">"F"</span><span class="p">)</span></code></pre>
+</figure>
+<p>What happens if<span> </span><code class="highlighter-rouge">grade</code><span> </span>is 50? All the conditions are false, so<span> </span><code class="highlighter-rouge">"F"</code><span> </span>gets printed on the screen. But what if<span> </span><code class="highlighter-rouge">grade</code><span> </span>is 95? Then all the conditions are true and everything gets printed, right? Nope! What happens is the program goes line by line. The first condition (grade &gt;= 90) is satisfied, so the program enters into the code inside the<span> </span><code class="highlighter-rouge">if</code><span> </span>statement, executing<span> </span><code class="highlighter-rouge">print("A")</code>. Once code inside a conditional has been executed, the rest of the conditions are skipped and none of the other conditionals are checked.</p>
+<p>練習3（和解決方案）<br/>拿一個清單，例如說一個：</p>
+<p>a = [1、2、3、5、8、13、21、34、55、89]<br/>並編寫一個程序，打印出列表中小於5的所有元素。</p>
+<p>附加功能：</p>
+<p>而不是一個一個地打印元素，而是創建一個新列表，其中該列表中的所有元素少於5個，並打印出該新列表。<br/>用一行Python編寫。<br/>向用戶詢問一個數字，然後返回一個列表，該列表僅包含原始列表a中小於用戶給定數字的元素。<br/>討論區<br/>本週主題：</p>
+<p>清單<br/>更多條件（如果語句）<br/>清單<br/>本週的練習涉及一個對所有類型和風格的編程都至關重要的主題：列表。列表基本上是一種將事物（稱為元素）進行分組的有序方式-Python中列表的最酷的功能是您可以擁有一個包含多種類型對象的列表。您的列表可以混合在字符串，整數，對象，其他列表之間，包括您所擁有的。</p>
+<p>構造一個空列表的方法就是</p>
+<p>x = []<br/>現在，變量x包含一個空列表。要將內容添加到此列表中，只需將它們“添加”到列表中即可。像這樣：</p>
+<p>x = []<br/>x.append（3）<br/>您的列表x現在看起來像[3]。</p>
+<p>在Python中，列表也是可迭代的，這意味著您可以方便地使用for循環遍歷它們。 （如果您來自其他語言，例如C ++或Java，則最有可能習慣於使用計數器循環遍歷列表的索引-在Python中，您實際上可以循環遍曆元素。）我將讓代碼說明自己：</p>
+<p>my_list = [1，3，“米歇爾”，[5，6，7]]<br/>對於my_list中的元素：<br/> 打印（元素）<br/>將產生結果：</p>
+<p>1個<br/>3<br/>“米歇爾”<br/>[5，6，7]<br/>列表還有許多其他屬性，但是對於基本練習而言，您只需要此for循環屬性。未來幾週將處理列表的其他屬性。</p>
+<p>有關Python中列表的更多信息，請查看以下資源：</p>
+<p>列表中的官方Python文檔<br/>Python清單上的Tutorialspoint<br/>他人關於列表的博客文章<br/>更多條件<br/>關於條件的好處是它們遵循邏輯運算。它們也可以用於測試相等性。讓我們舉一個小例子。假設我要編寫一段代碼，將數字等級（1-100）轉換為字母等級（A，B，C，D，F）。代碼如下所示：</p>
+<p>成績=輸入（“輸入您的成績：”）<br/>如果成績&gt; = 90：<br/> 打印（“ A”）<br/>elif等級&gt; = 80：<br/> 打印（“ B”）<br/>elif等級&gt; = 70：<br/> 打印（“ C”）<br/>elif等級&gt; = 65：<br/> 打印（“ D”）<br/>其他：<br/> 打印（“ F”）<br/>如果年級是50，會發生什麼？所有條件都為假，因此“ F”被打印在屏幕上。但是，如果成績是95，該怎麼辦？然後所有條件都成立，一切都打印出來了，對吧？不！程序將逐行執行。滿足第一個條件（等級&gt; = 90），因此程序將在if語句內輸入代碼，並執行print（“ A”）。一旦執行了條件語句中的代碼，將跳過其餘條件，並且不檢查其他條件。</p><h2>4.</h2>
+<p></p>
+<p></p>
+<div id="gtx-anchor" style="position: absolute; visibility: hidden; left: 8px; top: 1155.66px; width: 42.5156px; height: 20px;"></div>
+<div aria-describedby="bubble-5" class="jfk-bubble gtx-bubble" role="alertdialog" style="visibility: visible; left: 15px; top: 1036px; opacity: 1;">
+<div class="jfk-bubble-content-id" id="bubble-5">
+<div id="gtx-host" style="min-width: 200px; max-width: 400px;"></div>
+</div>
+<div aria-label="Close" class="jfk-bubble-closebtn-id jfk-bubble-closebtn" role="button" tabindex="0"></div>
+<div class="jfk-bubble-arrow-id jfk-bubble-arrow jfk-bubble-arrowdown" style="left: 21.5px;">
+<div class="jfk-bubble-arrowimplbefore"></div>
+<div class="jfk-bubble-arrowimplafter"></div>
+</div>
+</div>
+</div>
+</div>
